@@ -1,0 +1,13 @@
+﻿Feature,Ilias,Moodle,Blackboard,LPlus,OpenOlat
+Open Source,Full,Full,Quarter,None,Full
+Full LMS,Full,Full,Full,None,Full
+Designed for E-Exams,Quarter,Quarter,Half,Full,Quarter
+"Customizable Test layout (i.e. single question per page, revisiting answers) ",None,Full,None,Full,Full
+Customizable Timing,Half,Half,Half,Full,Full
+Randomization,Full,Full,Full,Full,Full
+Intuitive User Interface,Half,Three Quarter,Three Quarters,"?, Quarter",Three Quarter
+Documentation and Community,Full,Full,Three Quarters,Full,Full
+Offline Capabilities (e.g. lost connection handeling),?,Three Quarter,Three Quarters,None,?
+Students can review exam after correction,Half,Full,Half,Full,?
+Integrated grading (a way of giving grades is available),Full,Full,Full,Full,?
+Ability to grade free text questions,Quarter,Half,Half,Full,?
