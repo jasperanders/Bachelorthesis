@@ -1,0 +1,395 @@
+\documentclass{thesisclass}
+
+%% -------------------------------
+%% |    IM Thesis Template       |
+%% -------------------------------
+%% Further additions by: Julian Huber, 2019
+%% julian.huber "at" kit.edu
+
+%% Notes:
+%% Language switch after \begin{document}
+
+% Based on thesisclass.cls of Timo Rohrberg, 2009
+% ----------------------------------------------------------------
+% Thesis - Main document
+% ----------------------------------------------------------------
+
+% Select your thesis language here:
+%\usepackage[english]{babel}
+\usepackage[german]{babel}
+
+
+%% ---------------------------------
+%% |      Additional packages      |
+%% ---------------------------------
+%% 
+
+\usepackage{graphicx}
+%http://en.wikibooks.org/wiki/LaTeX/Importing_Graphics#Graphics_storage
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+\graphicspath{{./figures/}} %Use curly braces for each path to add and don't
+% forget trailing slash '/'
+% \usepackage{epstopdf} %Nice to automatically convert eps figures to pdf
+% format  (from inkscape, etc)
+\usepackage[natbibapa]{apacite}
+\usepackage{booktabs}
+
+%% ---------------------------------
+%% | Needed for the List of Abbreviations |
+%% ---------------------------------
+\usepackage{nomencl}
+\renewcommand{\nomname}{List of Abbreviations}
+% Punkte zw. Abkürzung und Erklärung
+\setlength{\nomlabelwidth}{.32\hsize}%.32\hsize bezieht sich auf die Punkte zwischen Abkürzung und Erklärung -> je größer die Zahl, desto mehr %Punkte
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+% Zeilenabstände verkleinern
+\setlength{\nomitemsep}{-\parsep}
+\makenomenclature
+\usepackage[normalem]{ulem}
+\newcommand{\markup}[1]{\uline{#1}}
+
+\usepackage{xspace}
+
+\newcommand\ie{i.\,e.\xspace}
+\newcommand\eg{e.\,g.\xspace}
+\newcommand\Eg{E.\,g.\xspace}
+\newcommand{\Latex}{\LaTeX\xspace}
+
+
+
+%% ---------------------------------
+%% | Information about the thesis  |
+%% ---------------------------------
+
+% uncomment one of the following, according to your thesis
+\newcommand{\mytype}{\iflanguage{english}{Bachelor Thesis}{Bachelorarbeit}} 
+%\newcommand{\mytype}{\iflanguage{english}{Master's Thesis}{Masterarbeit}} 
+%\newcommand{\mytype}{\iflanguage{english}{Seminar Thesis}{Seminararbeit}} 
+
+\newcommand{\myname}{Vorname Nachname}
+\newcommand{\matricle}{1234567}
+\newcommand{\mytitle}{\iflanguage{english}{Title}{Titel der Arbeit}}
+\newcommand{\myinstitute}{\iflanguage{english}
+{Institute of Information Systems and Marketing (IISM) \\
+Information \& Market Engineering}
+{Institut für Informationswirtschaft und Marketing (IISM) \\
+Information \& Market Engineering}}
+
+\newcommand{\reviewerone}{Prof. Dr. rer. pol. Christof Weinhardt}
+\newcommand{\reviewertwo}{Vorname Nachname}
+\newcommand{\advisor}{Vorname Nachname}
+\newcommand{\advisortwo}{}
+
+\newcommand{\timestart}{\iflanguage{english}{XX. Month 20XX}{XX. Monat 20XX}}
+\newcommand{\timeend}{\iflanguage{english}{XXth of Month 20XX}{XX. Monat 20XX}}
+\newcommand{\submissiontime}{DD. MM. 20XX}
+
+%% -------------------------------
+%% |  Information for PDF file   |
+%% -------------------------------
+%% IM: Auto-Fill this information
+\hypersetup{
+ pdfauthor={\myname},
+ pdftitle={\mytitle},
+ pdfsubject={\mytype},
+ pdfkeywords={\mytype}
+}
+
+%% ---------------------------------
+%% | ToDo Marker - only for draft! |
+%% ---------------------------------
+% Remove this section for final version!
+\setlength{\marginparwidth}{20mm}
+
+\newcommand{\margtodo}
+{\marginpar{\textbf{\textcolor{red}{ToDo}}}{}}
+
+\newcommand{\todo}[1]
+{{\textbf{\textcolor{red}{(\margtodo{}#1)}}}{}}
+
+
+%% --------------------------------
+%% | Old Marker - only for draft! |
+%% --------------------------------
+% Remove this section for final version!
+\newenvironment{deprecated}
+{\begin{color}{gray}}
+{\end{color}}
+
+
+%% --------------------------------
+%% | Settings for word separation |
+%% --------------------------------
+% Help for separation:
+% In german package the following hints are additionally available:
+% "- = Additional separation
+% "| = Suppress ligation and possible separation (e.g. Schaf"|fell)
+% "~ = Hyphenation without separation (e.g. bergauf und "~ab)
+% "= = Hyphenation with separation before and after
+% "" = Separation without a hyphenation (e.g. und/""oder)
+
+% Describe separation hints here:
+\hyphenation{
+% Pro-to-koll-in-stan-zen
+% Ma-na-ge-ment  Netz-werk-ele-men-ten
+% Netz-werk Netz-werk-re-ser-vie-rung
+% Netz-werk-adap-ter Fein-ju-stier-ung
+% Da-ten-strom-spe-zi-fi-ka-tion Pa-ket-rumpf
+% Kon-troll-in-stanz
+}
+
+
+%% ------------------------
+%% |    Including files   |
+%% ------------------------
+% Only files listed here will be included!
+% Userful command for partially translating the document (for bug-fixing e.g.)
+\includeonly{%
+titlepage,
+text/abbreviations,
+text/introduction,
+text/content,
+text/evaluation,
+text/conclusion,
+text/declaration,
+text/appendix
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Here, main documents begins %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\frontmatter
+\pagenumbering{roman}
+\include{titlepage}
+% IM Style: No additional blank page
+% \blankpage
+
+
+%% -------------------
+%% |   Directories   |
+%% -------------------
+\tableofcontents
+% IM Style: No additional blank page
+% \blankpaage
+
+% Do not include a list of figures, list of tables and list of abbreviations, if the work is a seminar thesis
+\iflanguage{english}{
+\ifthenelse{\equal{\mytype}{Seminar Thesis}}
+{}
+{
+\listoffigures \addcontentsline{toc}{chapter}{List of Figures} 
+\listoftables  \addcontentsline{toc}{chapter}{List of Tables} 
+\printnomenclature   \addcontentsline{toc}{chapter}{List of Abbreviations} 
+}
+}
+{
+\ifthenelse{\equal{\mytype}{Seminararbeit}}
+{}
+{
+\listoffigures \addcontentsline{toc}{chapter}{Abbildungsverzeichnis} 
+\listoftables \addcontentsline{toc}{chapter}{Tabellenverzeichnis} 
+\printnomenclature \addcontentsline{toc}{chapter}{Abkürzungsverzeichnis}
+}
+}
+
+% Execute this command for index creation, i.e., for abbreviations by the nomencl package
+% makeindex thesis.nlo -s nomencl.ist -o thesis.nls
+
+
+
+%\printnomenclature
+
+
+
+%% -----------------
+%% |   Main part   |
+%% -----------------
+\mainmatter
+\pagenumbering{arabic}
+
+
+%% ==============
+\chapter*{Abstract} 
+\textit{A short summary of your topic in a nutshell. Should be not more than 150 words as a single paragraph without any references.}
+
+\chapter*{Zusammenfassung} 
+\textit{summary in German; only if required by the examination rules}
+
+
+\chapter{Introduction}
+Discuss the relevance of your topic, state the problem briefly and repeat the contribution, as research questions. Give an outline of your thesis.
+
+
+
+%% ===========================
+\section{Section 1}
+\label{ch:Content1:sec:Section1}
+%% ===========================
+
+\dots
+
+\iflanguage{english}
+{The abbreviation etc. \nomenclature{etc.}{et cetera} can be viewed in the list of abbreviations.}
+{Die Abkürzung etc.\nomenclature{etc.}{et cetera} steht im Abkürzungsverzeichnis.}
+
+
+
+%% ===========================
+\section{Section 2}
+\label{ch:Content1:sec:Section2}
+%% ===========================
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{llr}
+\toprule
+\multicolumn{2}{c}{Item} \\
+\cmidrule(r){1-2}
+Animal    & Description & Price (\$) \\
+\midrule
+Gnat      & per gram    & 13.65      \\
+          & each        & 0.01       \\
+Gnu       & stuffed     & 92.50      \\
+Emu       & stuffed     & 33.33      \\
+Armadillo & frozen      & 8.99       \\
+\bottomrule
+\end{tabular}
+\caption{A table}
+\end{table}
+%%
+% Nice little helper: https://www.tablesgenerator.com/
+
+\chapter{Related Work} What are the differences/similarities to the existing literature? Summarize the findings and identify differences to your own study.
+
+\chapter{Methods} How is the problem solved? Introduce your methodology.
+\chapter{Results} What are the findings? Find appropriate visualization (e.g., tables, charts).
+\chapter{Discussion} What does it mean? Point out limitations and e.g., managerial implications or future impact.
+\chapter{Conclusion \& Outlook} Repeat the problem and its relevance, as well as the contribution (plus quantitative results). Provide an outlook for further research steps.
+
+
+
+\chapter{How to Write your Thesis adapted from Nicole Ludwig}
+
+\section{Citations}
+\begin{itemize}
+\item Please be careful to cite correctly otherwise it will be regarded as plagiarism (\url{http://en.wikipedia.org/ wiki/Plagiarism})! Plagiarism will result in failing.
+\item There is a difference between \emph{direct quotations}, \emph{citing an approach or similar directly} and \emph{indirect quotations}. Make sure you understand the differences.
+\item This is an example of a direct quotation which has a page number
+\item[] \emph{This is contrary to the conventional perception that ``large data sets offer a higher form of intelligence and knowledge'' and possess an ``aura of truth, objectivity, and accuracy'' \citep[663]{boyd2012critical}}.
+\item Example of citing an approach or similar directly 
+\item[] \emph{Following \citet{conejo2005day} and \citet{misiorek2006point}, we employ a naive but challenging test to verify that our proposed models are better than random guessing.}
+
+\item Example for an indirect quotation (analogous statement) 
+\item[] \emph{These are robust to errors resulting from the inclusion of predictors that do not contribute to the model by performing feature selection \citep{kuhn2013applied}.}
+
+\item Sometimes it is unavoidable to reference a website. Like this \citet{Model3Tesla2019} reference, there should be a access date.
+\item As a general recommendation, don't use direct quotations frequently, only if you want to quote one of the \emph{big guys} or unique statements.
+\item When citing websites, add the date at which you retrieved the content.
+\item Be consistent with your citation style and your bibliography.
+\end{itemize}
+
+\section{Literature}
+
+There are many sources of literature for your thesis. A good starting point are those listed below. 
+\begin{itemize}
+	\item Google Scholar
+	\item Web of Knowledge
+	\item ScienceDirect
+	\item Webpages of journals, such as Elsevier, Springer, IEEE and ACM
+\end{itemize}
+You may want to use different literature depending on the reason for your reference. Below you can find a list of reasons why one would use a reference:
+\begin{itemize}
+	\item Similar research
+	\item Proof of relevance
+	\item Proof of novelty
+	\item Same methodology
+	\item Links for background search
+	\item Theories for discussion
+\end{itemize}
+During your research, you will presumably collect quite a large number of publications. The proper organization of your literature will therefore ease your writing and citing later on. We recommend you use software to help you with the organization, such as Citavi (you can get a licence through the university). Citavi works well together with both LATEX and Microsoft Word. If you prefer to write in Microsoft Word, you can also consider the use of its
+internal reference management (search for a tutorial online).
+
+\section{Writing your Thesis }
+When it comes to writing your thesis, we expect a scientific style, structure and form which is described below. Allow yourself enough time for the actual writing process and revising, since writing is not a trivial task.\footnote{An example footnote.}
+
+\subsection{Style}
+
+\begin{itemize}
+	\item Check your spelling and grammar. Preferably use a software to help you with that.
+	\item Use understandable/clean English. You might want to check for synonyms using \eg \url{http://www.thesaurus.com/}. A good dictionary is \url{http://www.linguee.com}, which provides examples on how to use words in the right context.
+	\item The way you write strongly affects how your text is interpreted. Therefore, we recommend you read \emph{The Science of Writing} by George Gopen (\url{https://cseweb.ucsd.edu/~swanson/papers/science-of-writing.pdf}) carefully and to follow all suggestions closely.
+	\item Read \url{http://www.docstyles.com/library/ascience.pdf} on how you can help readers by adding commas. Here is a rather short summary, \ie \url{http://englishplus.com/grammar/00000074.htm}. In addition, we recommend that adverbs at the beginning of a sentence are followed by a comma, \eg \emph{Interestingly, this helps
+readers to understand your writing}.
+   \item Within your document, we recommend that each section is introduced by at least a few sentences. By doing so, you avoid situations where two headlines are immediately followed by one another. Instead, add a separating sentence that introduces the topic and its context.
+   \item Format your code using a monospaced font which helps readers to identify text as code. See \url{http://en. wikipedia.org/wiki/Monospaced_font} for an explanation. In addition to that, you might want to use a different colour scheme.
+	\item In most cases, a footnote at the end of a sentence follows the punctuation, as this example shows.\footnote{This is a footnote.}
+	\item Check the number of decimal places. A number such as 1.23456 might be correct, but given possible perturbations and errors of the original data, it is common to restrict oneself to roughly one to three decimal places (\eg 1.23). This is achieved by rounding before copying code output into your document.
+	\item Use capitalization in your headlines consistently. Either always use initial capital letters, such as \emph{Table of Contents}, or always an initial capital letter followed by small ones, such as \emph{Table of contents}.
+\end{itemize}
+
+\subsection{Figures and Tables}
+
+\begin{itemize}
+	\item Check your captions beneath figures. Make sure the text starts with a capital letter and the sentence is accompanied by punctuation. Correct examples are: \\ 
+	Fig. 1. Some text. \\
+	Figure 2. Some other text.
+	\item Each figure and table must be referenced with a number in the text. Most authors spell \emph{Figure 1}, \emph{Table 2}, \emph{Equation (3)} and \emph{Section 4.1} with a capital letter when accompanied by a number.
+	\item Highlight column names (\ie the first row of your table) in bold.
+	\item You should not copy output of your analysis from your program (R, Python, Matlab) directly as graphics, but add a table of your own by selecting the most relevant values (\eg t-values, estimates or standard errors for a regression).
+	\item Pay attention to the quality of your graphics. Make sure you use a high resolution so that graphics are not pixelated. If you make your own graphics, we recommend Microsoft Visio for procedural/flow diagrams.
+\end{itemize}
+
+\subsection{Formulae}
+
+\begin{itemize}
+	\item Formulae are always followed by a punctuation, \eg
+	\begin{equation}
+		2 + 2 = 4.
+	\end{equation}
+	At the same time, you do not use a colon before a formula.
+	\item If you write with Microsoft Word, use the built-in formula editor in Word. Do not copy formulae as graphics with different layouts or of low quality. Also use the formula editor inside Word for in-text formulae or symbols, such as $a+b$, to typeset variables in italics. Try to use a recent version (2007 or later), since it comes with a new editor for typesetting formulae
+	\item Explain all the variables (especially in formulae) you use. For example, $F = mg$, where $F$ is force, $m$ mass and $g$ the gravitational constant.
+	\item Variables must be in italic, such as $x$ instead of x.
+	\item Longer equations should be placed in a separate line -- either aligned to the left or centred. Also consider using equation numbers.
+	\item Use your variable names coherently, \eg a variable $e$ cannot be used as an error term and then as a time series.
+\end{itemize}
+
+
+\include{text/declaration}
+
+
+%% ----------------
+%% |   Appendix   |
+%% ----------------
+% IM Style: No additional blank page
+% \cleardoublepage
+
+\input{text/appendix}
+
+
+%% --------------------
+%% |   Bibliography   |
+%% --------------------
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+
+% IM Style
+\bibliographystyle{apacite}
+
+%What research is referred to?
+
+% Informatik-Style
+%\iflanguage{english}
+%{\bibliographystyle{IEEEtranSA}}	% english style
+%{\bibliographystyle{babalpha-fl}}	% german style
+												  
+% Use IEEEtran for numeric references
+%\bibliographystyle{IEEEtranSA})
+
+\bibliography{thesis}
+
+
+\end{document}

@@ -1,6 +1,7 @@
 {
-  "cSpell.enableFiletypes": [
-    "markdown"
-  ],
-  "cSpell.enabled": false
+  "cSpell.enableFiletypes": ["markdown"],
+  "cSpell.enabled": false,
+  "[markdown]": {
+    "editor.wordWrap": "wordWrapColumn"
+  }
 }
