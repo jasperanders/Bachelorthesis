@@ -37,6 +37,9 @@ One of the most time-consuming aspects of exam creation is the zusammenstellung 
 
 Some scholars such as Book Author have concerns about filling such a questio pool. If this had to be done by one examiner alone this would really be a serious task but in times of wide spread social media sharing questions or entire pools is worth consideration. As a other way of filling question pools, questions could be thought out by students as exam preperation. Filling the question pool may seem like a daunting task, but making utility of crow thinking and past experiences can dramatically help this endavour. Having created a big enough question pool does not only help in exam creation, it also prevents students from knowing the exam beforhand. Often exam questions are treated as secreds as they are used again and again. This secrecy can not relyably be enforced. It is genral procdure that students collaborate to create in depth Gedächnisprotokolle, which are then uploaded for public access. Having a large question pool, makes it almost impossible for a student to prepare all questions beforehand, creating a more sound depiction of the students skillset.
 
+- [ ] scale economy
+- [ ] network effects
+
 ## A fair depiction of skill
 
 As Handke said in his book, we should not look at exams mearly as a service. Exams should improve
@@ -79,9 +82,19 @@ With regard to the configuration and usage of an e-exam tool, it is clear that a
 
 Politics and angst also play into the above problems. As new technologie and software often creates a sense of being overwhelmed there must be a strone emphasis on showing examiners the advantages an e-examination system could give them. E-exams especially show their potential when being widely adopted. As more usage of e-exams can lead to network effects. Especially inside an institution there must be enforcement of the usage of new systems. The faster a new way of working gets adapedt the faster it can improve. In this way also small exams are very valuable. It is even thinkable to get immediate feedback of the examinees to improve the system or to get a students feelings about the exam. As the examination infrastructure is easily scalable, there is not need for smaller exam groups to move back to paper. Questions and questionpools can be created in the same way as for bigger exams and as a new e-exam does not need more resources there is no need to hold back.
 
-## E-exams Network effects
+=======================================
 
 ## From central to decentral e-exams — moving up the ladder
+
+The previous section was about moving away from paper and its benefits. As we now aim to improve the examination process even further. In order to do this, we must look at the shortcomings our current thought out system still has.
+
+## E-Exams as an logistics problem
+
+As seen above, e-exams can be immensely more efficient in terms of logistics, compared to a paper based exam. There are however still some shortcomings. Especially the personel that is needed in order to supervise the examinees seems to be costly. However the personel is only needed to supervise student behavior and enforce exam rules. As we discussed earlier open book exams are realizable quite easily using e-exams. Also through the use of heavy randomization, it is harder for them to collaborate.
+
+- [ ] Copy pasta
+- [ ] encryped local storage
+- [ ]
 
 ## Cheating
 
