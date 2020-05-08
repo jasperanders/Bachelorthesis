@@ -2,6 +2,9 @@
   "cSpell.enableFiletypes": ["markdown"],
   "cSpell.enabled": false,
   "[markdown]": {
-    "editor.wordWrap": "wordWrapColumn"
-  }
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontWeight": "500"
+  },
+  "cSpell.words": ["exams", "pb"]
 }
