@@ -71,15 +71,15 @@ As I discussed earlyer cheating may not be the biggest problem if examiners rely
 
 Many have pointed at problems that may arise from switchig from paper based exams to e-exams. Some of these problems are not of any concern as techincal advancements have made them obsolete.
 
-The Bereitstellung of technical infrastructure in form of a computer for every testtaker may seem daunting. Nowadays it is more than common for students to have access to a webbrowser. And really thats all they need. Although not recommended, exams could really be taken on any smartphone.
+The providing of technical infrastructure in form of a computer for every testtaker may seem daunting. Nowadays it is more than common for students to have access to a webbrowser. And really thats all they need. Although not recommended, exams could really be taken on any smartphone.
 
 Another concern touches upon connection problems. There is no doubt upon e-exam using a client--server structure. Dependant on the implementation, this may make e-exams prone to connection errors. For example if after every question a new question must be fetched from the server having connection errors can quickly ruin the exam for anyone that is taking it. On the other hand there is the possibility to store the exam and the given answers in the local storage of the browser. As long as the browser is not reinstalled or forced to clear its chache the exam information is secure. To prevent fiddelling with the local chache it could be encrypted. Using this method e-exams could be counducted even be conducted offline, only to send in the exams solution and to download the exam questions an internet connection would be needed. Of course such a soulution must be tested firmly to make sure that any way of hacking the exam is prevented.
 
+With regard to the configuration and usage of an e-exam tool, it is clear that a soulution that is easily usable for novice users but yields potential for more advanced users is of utmost importance. Examiners must have the chance to learn the new tool, ideally this is supported by the usage of hight standards of user interface design.
 
+Politics and angst also play into the above problems. As new technologie and software often creates a sense of being overwhelmed there must be a strone emphasis on showing examiners the advantages an e-examination system could give them. E-exams especially show their potential when being widely adopted. As more usage of e-exams can lead to network effects. Especially inside an institution there must be enforcement of the usage of new systems. The faster a new way of working gets adapedt the faster it can improve. In this way also small exams are very valuable. It is even thinkable to get immediate feedback of the examinees to improve the system or to get a students feelings about the exam. As the examination infrastructure is easily scalable, there is not need for smaller exam groups to move back to paper. Questions and questionpools can be created in the same way as for bigger exams and as a new e-exam does not need more resources there is no need to hold back.
 
-- [ ] Konfiguration
-- [ ] Anzahl der Teilnehmer
-- [ ] Politik
+## E-exams Network effects
 
 ## From central to decentral e-exams — moving up the ladder
 
