@@ -6,5 +6,15 @@
     "editor.fontFamily": "'Fira Code'",
     "editor.fontWeight": "500"
   },
-  "cSpell.words": ["exams", "pb"]
+  "cSpell.words": ["exams", "pb"],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "after": ["g", "j"]
+    },
+    {
+      "before": ["k"],
+      "after": ["g", "k"]
+    }
+  ]
 }

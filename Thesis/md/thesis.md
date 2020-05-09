@@ -8,24 +8,26 @@ In its research question this thesis ask about how to imporve upon centralized e
 
 ### Why move from paper based to electronic exams in the first place?
 
+Section overview:
+
+- why do we want BOYD and what it is
+- paper based exams are still the way to go
+
 Paper based exams are still the way to go, when it comes to assessments in German higher education [cite]. There is a strong case to be made by many scholars that e-exams yield benefits over traditional exams. Especially in the efficiency of the assessment process, e-exams show their potential. Leveraging these protentials must not come at the cost of other bereiche. E-exams must at least reach the level of a PB-exam, in their respective field.
 
-When talking about e-exams we will focus on bring your own device (BYOD) exams. As I will later talk about decentralized exams which are in any way conducted at home using the examinees own device, it is unnessasary to think about techincal infrastructure that would be needed to conduct e-exams with univesity computers. Despite BOYD exams are no novelty, they are talked about in many papers and talks. For example the univesity of Blurbington relies on BOYD exams.
+When talking about e-exams we will focus on bring your own device (BYOD) exams. As I will later talk about decentralized exams which are in any way conducted at home using the examinees own device, it is unnessasary to think about techincal infrastructure, that would be needed to conduct e-exams with univesity computers. Despite BOYD exams are no novelty, they are talked about in many papers and talks. For example the univesity of Blurbington relies on BOYD exams.
 
 ## Exams as a logistics problem
-
+ 
 First, lets think of an exam only as a logistics problem. To illustrate this we use the examination process at the KIT as an example. Although some things may differ, the gist remains. At the Kit exams must be securely printed at one location. Most exams are not single page, they must be stapled by hand. Exam taking students are numerous, it is common for exams to take place at many different sites. Therefore, on the test day must be carried out to the test site. For security reasons this is seldom done by one person only. On test site, exams must be distributed to students. After the exam is written, exam are collected and counted. They are then carried back to a central location, where they remain until correction. For checking answers, correctors come together, again at a central location, where they then are able to correct the exam. After correction a grade for students is published via internet. Some time after the exams have to be brought to revision at another location for the students to review their results. Lastly the exams are brought to archive to be stored there until they are free to be shredded.
 
 Looking at e-exams the logistics overhead is way smaller. All data can be stored at a central database. There is no printing, exams are directly transferred to the students device the moment the exam begins and can automatically be retrieved after the exam is over. Because the exam answers are digitally available some can be automatically evaluated. The correction of the remaining answers is no longer bound to a certain site but can be done remotely. Despite the test result also the solved exam can be shared via internet. Students can review their exam from wherever they want. Only these students who have specific questions about their exam need to come into revision. The digital exam data can then be archived and in time deleted.
 
-This comparison illustrates the advantage of e-exams with regard to logistics. Not only is there less movement of employees but more importantly there is no movement of physical paper.
-
-- [ ] Datensicherheit.
-- [ ] Redundante Datenspeicherung.
+This comparison illustrates the advantage of e-exams with regard to logistics. Not only is there less movement of employees but more importantly there is no movement of physical paper. Further we find advantages in the digital archiving. As data can be securely saved on a server, data protection is easier but especiall the creatin of redundant backup can be made nearly with no added cost.
 
 ## The hassel of handwriting
 
-Checking an exam for correctness is one of the most time-consuming process in conducting an exam. Moving away from paper can reduce this time drastically making use of two things. First, some question types, such as multiple choice, true/false and Zuordungsfragen can be automatically checked. This is an immediate improvement over correcting these questions by hand. Secondly must be considered that any exam data exists in digital form. Whereas in PB-exams the answers are only available in sometimes cryptic handwriting, in e-exams the answers are available as digital text. One study shows that reading text is 10000 times as fast. If the text liegt vor in digital form, further unterstützung can be used to make reading free text answers even faster. It is thinkable to highlight special keywords in order to make answers even more readable. In any way the digital presents of exam date leads to a major improvement in the speed an exam can be checked.
+Checking an exam for correctness is one of the most time-consuming process in conducting an exam. Moving away from paper can reduce this time drastically making use of two things. First, some question types, such as multiple choice, true/false and Zuordungsfragen can be automatically checked. This is an immediate improvement over correcting these questions by hand. Secondly must be considered that any exam data exists in digital form. Whereas in PB-exams the answers are ONLY available in sometimes cryptic handwriting, in e-exams the answers are available as digital text. One study shows that reading text is 10000 times as fast. If the text liegt vor in digital form, further unterstützung can be used to make reading free text answers even faster. It is thinkable to highlight special keywords in order to make answers even more readable. In any way the digital presents of exam date leads to a major improvement in the speed an exam can be checked.
 
 ## Statistics on the fly
 
@@ -60,8 +62,6 @@ Some scolars express concerns about the infrastructural scalability of e-exam sy
 
 ## Cheating and randomization
 
-Cheating may be the biggest concernt when it comes to moving from paper to e-exams is probably cheating. Although academic dishonesty is not vermeidbar there must be made measures to prevent it.
-
 As [cite] found in his paper there are two main categories when it comes to cheating. Planned and spontaineous cheating. Spontainous cheating accures in stress situations where the student feels overwehlmed. It may include looking at other students worksheets or even going to the toilet to look something up on the internet. Planned cheating on the other hand is intended by the stundet beforhand. The student deposits a cheat sheet in the bathroom, or directly to the exam. Even if the Folgen of cheating are in most cases a failure of the exam, cheating is still common among students. A study of ... found that measures against cheating had almost no effect.
 
 We must keep this in mind when thinking about e-exams. Against spontaious cheating, some measure can easily be enforced. As tests can be highly randomized looking at a neighbours screen may lead to no new information.
@@ -90,14 +90,28 @@ The previous section was about moving away from paper and its benefits. As we no
 
 ## E-Exams as an logistics problem
 
-As seen above, e-exams can be immensely more efficient in terms of logistics, compared to a paper based exam. There are however still some shortcomings. Especially the personel that is needed in order to supervise the examinees seems to be costly. However the personel is only needed to supervise student behavior and enforce exam rules. As we discussed earlier open book exams are realizable quite easily using e-exams. Also through the use of heavy randomization, it is harder for them to collaborate.
+As seen above, e-exams can be immensely more efficient in terms of logistics, compared to a paper based exam. There are however still some shortcomings. Especially the personel that is needed in order to supervise the examinees is costly. This can be improved by e-exams. For these improvements to really take effect we need to take earlier considerations into account. As we discussed open book exams are realizable quite easily using e-exams. As open book exams allow for the use of any material, for the einschränkung of Material usage there really is no need for supervision.
 
-- [ ] Copy pasta
-- [ ] encryped local storage
-- [ ]
+A nother reason for supervison might be that, students collaborate and thus cheat the idea of open book exams. This can be counterd through the use of heavy randomization. As students encounter questions at different times, collaboration to answer them is hardened. Also copy and pasting must be repressed, as it allows for quick sharing of answers.
+
+We already discussed the need for local storage above. Earlier we takeld about it as a measure against data loss in event of a connection error. Moving e-exams into the decentralized realm poses the need for encrypted storage of data. As data is send from the local storage tempering with the data must be prevented at all cost.
+
+## Less distractions
+
+Some studies find that exams are full of distractions. They create a stressfull atmosphere. This is especially bad for studentes, taking exams at home can eliminate this stress factor. And even for students who don't have a quite place to write their exams, there could be made room for examiees in either libaries or lecture halls. Because students dont need any supervision and no special equipment they really are independent from any place.
+
+## Moving beyond the limits of education
+
+Education really is a problem of scale. Many studies have shown that the big inequalities that we see today in part are enabled by inequalities in education. Through an open education program many universities aim to dwarf this inequality. The biggest parts of the universities education are: Lectures, tutorials and exams. Today already you can view some of the best lectures online, for free. As Harvard takes part in a open education program. Second, through the rise of plattforms such as the stackexchange stack tutorials have become somewhat crowdsolved. Finding a solution to broughtly test students no matter their location would make a enormous step in the right direction.
 
 ## Cheating
 
 No system is foolproof.
 
 - [ ] cooperation
+
+=======================================
+
+## Bonus
+
+University as a way to help you gain knowledge not a way to test it.
