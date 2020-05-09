@@ -1,3 +1,7 @@
+---
+Author: Jasper Anders
+---
+
 # Aiming to improve higher education testing
 
 ## Introduction
@@ -18,7 +22,7 @@ Paper based exams are still the way to go, when it comes to assessments in Germa
 When talking about e-exams we will focus on bring your own device (BYOD) exams. As I will later talk about decentralized exams which are in any way conducted at home using the examinees own device, it is unnessasary to think about techincal infrastructure, that would be needed to conduct e-exams with univesity computers. Despite BOYD exams are no novelty, they are talked about in many papers and talks. For example the univesity of Blurbington relies on BOYD exams.
 
 ## Exams as a logistics problem
- 
+
 First, lets think of an exam only as a logistics problem. To illustrate this we use the examination process at the KIT as an example. Although some things may differ, the gist remains. At the Kit exams must be securely printed at one location. Most exams are not single page, they must be stapled by hand. Exam taking students are numerous, it is common for exams to take place at many different sites. Therefore, on the test day must be carried out to the test site. For security reasons this is seldom done by one person only. On test site, exams must be distributed to students. After the exam is written, exam are collected and counted. They are then carried back to a central location, where they remain until correction. For checking answers, correctors come together, again at a central location, where they then are able to correct the exam. After correction a grade for students is published via internet. Some time after the exams have to be brought to revision at another location for the students to review their results. Lastly the exams are brought to archive to be stored there until they are free to be shredded.
 
 Looking at e-exams the logistics overhead is way smaller. All data can be stored at a central database. There is no printing, exams are directly transferred to the students device the moment the exam begins and can automatically be retrieved after the exam is over. Because the exam answers are digitally available some can be automatically evaluated. The correction of the remaining answers is no longer bound to a certain site but can be done remotely. Despite the test result also the solved exam can be shared via internet. Students can review their exam from wherever they want. Only these students who have specific questions about their exam need to come into revision. The digital exam data can then be archived and in time deleted.
@@ -90,7 +94,7 @@ The previous section was about moving away from paper and its benefits. As we no
 
 ## E-Exams as an logistics problem
 
-As seen above, e-exams can be immensely more efficient in terms of logistics, compared to a paper based exam. There are however still some shortcomings. Especially the personel that is needed in order to supervise the examinees is costly. This can be improved by e-exams. For these improvements to really take effect we need to take earlier considerations into account. As we discussed open book exams are realizable quite easily using e-exams. As open book exams allow for the use of any material, for the einschränkung of Material usage there really is no need for supervision.
+As seen above, e-exams can be immensely more efficient in terms of logistics, compared to a paper based exam. There are however still some shortcomings. First of all the allocation of student to their respective test taking location, completely get replaced, as their are not test taking locations any more. This makes the process of exam coordination way easier. Second, an exam takes many humans to supervise students during their exam. This can be improved by e-exams. To ensure, these improvements really take effect we need to take earlier considerations into account. As we discussed open book exams are realizable quite easily using e-exams. As open book exams allow for the use of any material, for the einschränkung of Material usage there really is no need for supervision.
 
 A nother reason for supervison might be that, students collaborate and thus cheat the idea of open book exams. This can be counterd through the use of heavy randomization. As students encounter questions at different times, collaboration to answer them is hardened. Also copy and pasting must be repressed, as it allows for quick sharing of answers.
 
