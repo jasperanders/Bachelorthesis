@@ -108,9 +108,13 @@ Some studies find that exams are full of distractions. They create a stressfull 
 
 Education really is a problem of scale. Many studies have shown that the big inequalities that we see today in part are enabled by inequalities in education. Through an open education program many universities aim to dwarf this inequality. The biggest parts of the universities education are: Lectures, tutorials and exams. Today already you can view some of the best lectures online, for free. As Harvard takes part in a open education program. Second, through the rise of plattforms such as the stackexchange stack tutorials have become somewhat crowdsolved. Finding a solution to broughtly test students no matter their location would make a enormous step in the right direction.
 
-## Cheating
+## Identity
 
-No system is foolproof.
+We may delay cheating and cooperation through different measures such as time restictions and randomization. How can we now check if the student we are examing really is the student we want to examine. There is no satifactory answer to this question. In a paper paper based exam student identity is überprüft by the examiner. By looking at the student identity card and letting the student sing the identiy is prooven. If there would really be a big concern about students taking other students exams, checking a students identiy this way is easily fooled. The testtaker must only somewhat resemble the testaker, as the student ids photographs have bad resolutions and are only glanced upon. It can be argued that letting someone take your whole exam is simply to risky.
+
+To get at least some information about the identity of the test taker and to make the hurdle to cheat higher, students could be monitored by their webcams or their smartphones. As alone the thought of being watched already reduces the thought of doing something naughty makes many students rethink their desire to cheat.
+
+As a nother measure, the microphone might also be accessed. Tapping into what the student hears helps examiners to make out if a student is talkig to someone else. Through the use of audio meters and stichproben not every students video feed must be watched, only where verdacht is imment a investigation can be angebracht.
 
 - [ ] cooperation
 
