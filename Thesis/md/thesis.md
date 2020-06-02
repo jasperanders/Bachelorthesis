@@ -53,8 +53,11 @@ Is this really the first thing that i talk about?
 -->
 
 Thinking about the inherent advantages of e-exams, the logistical implications of exams pop into mind. To illustrate this we use the examination process at the KIT as an example <cite>. Although some things may differ, the gist remains.
+
 <!-- Hier muss noch mal eine genaue Befragung stattfinden -->
+
 Exams must be printed and stapled. As, exam taking students are numerous, it is common for exams to take place at many different sites. Therefore, on the test day exams must be carried out to the test site. Here, the Ciw of the KIT <KlausDurch> recommends at least two supervisors per test site. On test site, exams must be distributed to students. After the exam is written, exams are collected and counted. They are then carried back to a central location, where they remain until correction. For answer checking, correctors come together, again at a central location, where they then are able to correct the exam. After correction a grade for students is published via internet. Succeeding, an exam revision for students is planned and executed. Lastly exams are archived in their paper form.
+
 <!-- this is too long and obivious?! -->
 
 It is not supprising that handeling large amounts of paper results in logistics overhead. Removing the paper, subsequentially removes much of the logistics overhead. In an e-exam all of the exam data is digital. There is no printing, since exams are directly transferred to the students device. Further stundets answers can automatically be retrieved after the exam is over. Exam answers are digitally available. Some, such as multiple choice questions can be automatically evaluated. The correction of the remaining answers is no longer bound to a certain site but can be done remotely. Exam results and feedback could be directly issued to the students. Thus, revision could also be realized decentrally. The digital exam data can then be easly archived.
@@ -93,14 +96,15 @@ Stupid name.
 - refer to open source as model
 -->
 
-Part of the complexity and time intensiveness of exam creation lays in creating appropriate questions. Although many courses are not unique to one university, sharing of test question is not common. This might be due to the fact that paper based exams do not provide a foundation that allowes for collaboration. In paperbased exams there are no standards. Just as there is no elegant way of sharing exams, there is no way of easily using someones exam questions.
+Part of the complexity and time intensiveness of exam creation lays in creating appropriate questions. Although many courses are not unique to one university, sharing of test question is not common. This might be due to the fact that paper based exams do not provide a foundation for collaboration. In paperbased exams there are no standards. Just as there is no elegant way of sharing exams, there is no way of easily using someones exam questions.
 
-In e-exams on the other hand standards are way easier to enforce. The <IMS Global> has proposed a format for sharing and saving exams (QTI). Although it hase seen some use, it still is not supported by both <Moodle> and <Ilias>, both big players in German higher education.
+E-exams have to make use of an software artefact in oder to leverage their theoretical benifits. Such a artefact allows for an enforcment of a shareable general format. If users create exams in a specific software, implementing a standard is fairly straight foreward. Such a standard already exits under the name of <QTI 2.2>. Having a standard allowes for educators to collaborate to create exams.
 
-E-exams might help to change this 
+Further exams must not be limited to only a few questions. Exams can come from question pools --- a small subset of questions is selected from a way larger superset. With a large enough question pool exams can be generated automatically. The developmetn and maintenance of a large question pool is very time intensive for a single person, that is why collaboration is so important. Just like open source project are able to  
+
 As the Zurich University has proposed a general Format for e-exams <cite>, these exam questions are now easily shared among colleges and other universities. These questions can then be collected in so named question pools. At a point where a question pool is large enough, exams can be randomly generated using the exams [!already present in the pool!]. Instead of conceptualizing new exam questions, only the question pool must be taken care of.
 
-Some scholars such as [!Book Author!] have concerns about filling such a question pool <cite>. If this had to be done by one examiner, alone this would really be a serious task but in times of wide spread social media sharing questions or entire pools is worth consideration <!-- has this been done?? --> . As a other way of filling question pools, questions could be thought out by students as exam preperation <!-- where does this come from -->. Filling the question pool may seem like a daunting task, but making utility of crowd thinking and past experiences can dramatically help this endavour <!-- this is too sloppy -->.
+Some scholars such as <Handke> have concerns about filling such a question pool <cite>. If this had to be done by one examiner, alone this would really be a serious task but in times of wide spread social media sharing questions or entire pools is worth consideration <!-- has this been done?? --> . As a other way of filling question pools, questions could be thought out by students as exam preperation <!-- where does this come from -->. Filling the question pool may seem like a daunting task, but making utility of crowd thinking and past experiences can dramatically help this endavour <!-- this is too sloppy -->.
 
 Here e-exams show their capabilies in network effects. As more examiners and universities use e-exams, more questions are generated for sharing. Being capable to make use of social media like structures would really help everybody to generate high quality exams fast. As many would argue, it is easier to review an already good selection of questions and pick good ones than to rethink them all from scratch. [!At the moment no sturcture exists which makes use of such ideas...!]
 
