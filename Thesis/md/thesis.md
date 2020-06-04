@@ -195,10 +195,6 @@ Otherwise, as in a this first step we just replaced paper with a computer there 
 
 As I discussed earlyer cheating may not even be a big concern if exams rely on (partial) open book. Open book exams do not need restriction of resources. For an open book exam not even software has to be restricted on students devices. This has also the benefit, that such a system has less parts that must be maintained, thus being less prone to errors. <!-- this is not very good. -->
 
-## Making the move seamless
-
-As briefly touched upon, e-exams must be at least as comfortable as their paper based counterpart. This especially is important when we think about nature of e-exams. As e-exams rely in a client server model they also rely on internet connection.
-
 ## Problems
 
 <!--
@@ -273,3 +269,7 @@ Education really is a problem of scale. Many studies have shown that the big ine
 Some scolars express concerns about the infrastructural scalability of e-exam systems. In their eyes, exams only provide utility with X students or more being part of the exam. This argument ignores the scaleable nature of the an exam system. Moving to e-exams must not be a decision of one course or one Lehrstuhl alone.
 
 - [ ] Größe von e-exams
+
+## Making the move seamless
+
+As briefly touched upon, e-exams must be at least as comfortable as their paper based counterpart. This especially is important when we think about nature of e-exams. As e-exams rely in a client server model they also rely on internet connection.
