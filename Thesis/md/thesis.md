@@ -2,7 +2,7 @@
 Author: Jasper Anders
 ---
 
-# Which requirements need to be matched to allow for sound competence testing, in form of decentralized e-exams?
+# Which requirements need to be matched to allow for sound capability testing, in form of decentralized e-exams?
 
 Tags:
 
@@ -14,6 +14,8 @@ Tags:
 ## Introduction
 
 ## The case for e-exams
+
+E-education is a much discussed topic. Most of the educational material has become digital. Still, paper based exams are the way to go, when it comes to assessments in German higher education. Altought some universities amonge these are the FU Berlin and the Johannes Gutenberg University Mainz have implemented some way of e-assessment, it still lacks wide application.
 
 In its research question this thesis ask about how to imporve upon centralized e-exams. This implies, that e-exams in general are superior to paper based exams. There is good reason for this implication. It is a good idea to take a look at these reasons before moving on.
 
@@ -30,13 +32,15 @@ Section overview:
 - !technical requirements of a systems. i.d. Browser -> Moodle/Blackboard...
 -->
 
-E-education is a much discussed topic. Much of the educational material has become mostly digital. Still, paper based exams are the way to go, when it comes to assessments in German higher education. Altought some universities amonge these are the FU Berlin and Johannes Gutenberg University Mainz have implemented some way of e-assessment, it still lacks wide application.
+Put simply central e-exams replace the pen and paper of paper based exams with a computer or tablet. To give intuition of the advantage of e-exams i will focus on _bring-your-own-device_ (BYOD) e-exams. In BYOD exams the device the student is taking the exam on is not provided by the universiyt authority, students bring their own tablet or laptop to take the exam on. The BYOD concept is not new. For example Robert Peregoodof talked about the BYOD implementation of the University of British Columbia in the <Glm> conference.
 
-In a first step, I will talk about central e-exams. These are coducted under the same circumstances as paper based exams (i.d. students come together in a lecture hall, instead of paper they use a computer to complete the exam). As I want to give intuition, why moving to a _decentralized_ e-examination system might be benificial, I will not discuss other ways of realizing central e-exams then the _bring-your-own-device_ (BYOD) approach. BYOD exams are conducted in the same environment as paper based exams are, the difference being that students bring their tablet or laptop to take the exam on their own device. The BYOD concept is not new. For example Robert Peregoodof talked about the BYOD implementation of the University of British Columbia in the <Glm> conference.
+<!--
+As I want to give intuition, why moving to a _decentralized_ e-examination system might be benificial, I will not discuss other ways of realizing central e-exams then the _bring-your-own-device_ (BYOD) approach.
+-->
 
-It is important to note that moving from paper based exams to e-exams should be a strict uprgrade. Still, paper based exams and e-exams are different in some key points. Some things that were considerated best practice must be reevaluated and rethought adequately fit the e-exam context. As I will show these changes do not limit the examination process but rather improve it.
+It is important to note that moving from paper based exams to e-exams should be a strict uprgrade. Still, paper based exams and e-exams are different in some key points. Some things that were considerated best practice must be reevaluated and rethought in order to adequately fit the e-exam context. As I will show these changes do not limit the examination process but rather improve it.
 
-When compared to paper based exams e-exams provide many advantages as <Handke> disscuss in their book. I will focus on two different types of advantages that e-exams provide. The fist type are inherent advantages. These are advantages that arise from soly digitizing a paper based exam. We find many of these adavantages in the efficiency of the assessment process.
+When compared to paper based exams e-exams provide many advantages as <Handke> disscusses in their book. I will devide these into two different types. The fist type are inherent advantages. These are advantages that arise from soley digitizing a paper based exam. These adavantages mainly effect the efficiency of the assessment process.
 
 The other type of advantages are created through additional considerations and by rethinking how paper based exams approach the examination process. These advantages arise mainly from improvements in testing accuracy and equality.
 
@@ -52,13 +56,11 @@ Is this really the first thing that i talk about?
 
 -->
 
-Thinking about the inherent advantages of e-exams, the logistical implications of exams pop into mind. To illustrate this we use the examination process at the KIT as an example <cite>. Although some things may differ, the gist remains.
+Thinking about the inherent advantages of e-exams, the logistical implications of exams pop into mind. To illustrate this we use the examination process at the KIT as an example <cite>. Although some steps may differ from university to university, the gist remains.
 
 <!-- Hier muss noch mal eine genaue Befragung stattfinden -->
 
 Exams must be printed and stapled. As, exam taking students are numerous, it is common for exams to take place at many different sites. Therefore, on the test day exams must be carried out to the test site. Here, the Ciw of the KIT <KlausDurch> recommends at least two supervisors per test site. On test site, exams must be distributed to students. After the exam is written, exams are collected and counted. They are then carried back to a central location, where they remain until correction. For answer checking, correctors come together, again at a central location, where they then are able to correct the exam. After correction a grade for students is published via internet. Succeeding, an exam revision for students is planned and executed. Lastly exams are archived in their paper form.
-
-<!-- this is too long and obivious?! -->
 
 It is not supprising that handeling large amounts of paper results in logistics overhead. Removing the paper, subsequentially removes much of the logistics overhead. In an e-exam all of the exam data is digital. There is no printing, since exams are directly transferred to the students device. Further stundets answers can automatically be retrieved after the exam is over. Exam answers are digitally available. Some, such as multiple choice questions can be automatically evaluated. The correction of the remaining answers is no longer bound to a certain site but can be done remotely. Exam results and feedback could be directly issued to the students. Thus, revision could also be realized decentrally. The digital exam data can then be easly archived.
 
@@ -72,6 +74,9 @@ Bad title. This section focuses soley on time improvement, change it?
 - Automated checking is possibel
 - Handwriting is bad -> what are the consequences? Only time? Unfairness rises?!
 - GUI support is possible, why do we need it?
+
+TD:
+- put in citation about effects of handwriting on grading
 -->
 
 Checking an exam for correctness is one of the most time-consuming process in conducting an exam. Moving away from paper can reduce this time drastically making use of two things: First, some question types, such as multiple choice, true or false can be automatically checked. This is an immediate improvement over correcting these questions by hand. Second, as exam answers are available in digital text reading and checking answers is easier. Answers must not be deciphered, correction of exams can be done faster.
@@ -94,13 +99,16 @@ Stupid name.
 - exam question must not be treated as sectets any more
 - ? a social network for question sharing??
 - refer to open source as model
+
+TODO:
+this needs work
 -->
 
 Part of the complexity and time intensiveness of exam creation lays in creating appropriate questions. Although many courses are not unique to one university, sharing of test question is not common. This might be due to the fact that paper based exams do not provide a foundation for collaboration. In paperbased exams there are no standards. Just as there is no elegant way of sharing exams, there is no way of easily using someones exam questions.
 
 E-exams have to make use of an software artefact in oder to leverage their theoretical benifits. Such a artefact allows for an enforcment of a shareable general format. If users create exams in a specific software, implementing a standard is fairly straight foreward. Such a standard already exits under the name of <QTI 2.2>. Having a standard allowes for educators to collaborate to create exams.
 
-Further exams must not be limited to only a few questions. Exams can come from question pools --- a small subset of questions is selected from a way larger superset. With a large enough question pool exams can be generated automatically. The developmetn and maintenance of a large question pool is very time intensive for a single person, that is why collaboration is so important. Just like open source project are able to  
+Further exams must not be limited to only a few questions. Exams can come from question pools --- a small subset of questions is selected from a way larger superset. With a large enough question pool exams can be generated automatically. The developmetn and maintenance of a large question pool is very time intensive for a single person, that is why collaboration is so important. Just like open source project are able to
 
 As the Zurich University has proposed a general Format for e-exams <cite>, these exam questions are now easily shared among colleges and other universities. These questions can then be collected in so named question pools. At a point where a question pool is large enough, exams can be randomly generated using the exams [!already present in the pool!]. Instead of conceptualizing new exam questions, only the question pool must be taken care of.
 
@@ -110,39 +118,62 @@ Here e-exams show their capabilies in network effects. As more examiners and uni
 
 Having created a big enough question pool does not only help in exam creation, it also prevents students from knowing the exam beforhand. Often exam questions are treated as secrets as they are used again and again. This secrecy can not relyably be enforced. It is genral procedure that students collaborate to create in depth Gedächnisprotokolle <cite>, which are then uploaded for public access. Having a large question pool, makes it almost impossible for a student to prepare all questions beforehand <!-- just like in a drivers license exam --> , creating a more sound depiction of the students skillset.
 
-## A fair depiction of skill
+## Partial Open Book Exams
 
 <!--
+TODO:
+- Bullemie lernen
+
 Moving beyond time and efficiancy improvements.
 - Fair depiction of skill
 - introduction into open book exams
 -->
 
-Till now I discussed advantages of e-exams that require no rethinking of the examination process in general, we mearly found ways to increase efficency.
+Untill now I discussed advantages of e-exams that require no rethinking of exam content. E-exams enable assessments to more closely depict a students actual skill level. As the <ETH> states in their paper, examinations should support the purpose of university to produce highly capable individuales. As much of a students academic success is based on their performance in exams, students are highly incentivised to focus their studies on the given exam format. This interdependency between knowledge aquisition and examination shows the importancy of exam design and poses the question of what and how to test.
 
-Although this is surely one key point in moving from paper based exams to e-exam, e-exam give us the possibility to improve also upon the examinees site of testing. In this section we will take a look at how this may be achived.
+Questions can be categorized into main groups <ETH>:
 
-As Handke said in his book, we should not look at exams mearly as a service <cite>. Exams should improve the students thinking and ... (Bezug).
+- **(Semi) Closed questions**, which mainly revolve around the demonstration of factual knowledge. Solutios are given by using a format like multipe choice [closed] or simple text input [semi-closed](e.g. "What does _BYOD_ stand for?")
+- **Competence questions**, which are suited to test for a certain practical skill. Solutions are given in form of an implementation of the specific task at hand. (e.g. "Using the software, implement an e-exam about e-learning.")
+- **Essay-type questions**, which are suited for assessing transfer knowledge and understanding. Solutions are given by free text input. (e.g. "Give reasons why subjects in computer engineering are especially well suited for e-exams.")
 
-Thinking about skillsets reveals another problem of paper based exams. As many have stated, exams often fail to depict real life problems <cite>. In contrast to exams, real life almost never asks soley for fakts, it asks for a brought application of knowledge. It asks for problem solutions, no matter the resource <!-- this is not sharp enought -->. There is a case to be made to test for fragestellungen <cite>, that come up in real life in order to fairly get a students skill level. When trying to achive this, open book exams may come closest to depicting a real life problem situation <cite>. On the other hand some fact knowledge is of utmost importance <cite>.
+The last two types can also be set in the context of an open book exam. In which students have access to any resource they feel they need in order to solve the question at hand. These open book tasks most closely reseble real world problems and thus are highly suitable for assessing a students capabilities.
 
-<!-- is this to free? --> Consider a doctor, who needs his cheat sheet, in order to conduct open heart surgery. Or an accountant who has to look up the meaning of working capital, every time it shows up. To make later reasoning more obvious, it is useful to think about why these two examples are considered a no go. The fact knowledge should be there, because it is needed immediately. A doctor who does not know his facts may loose lives, an accountant who does not know his vokaulary is nearly useless in any kind of nagotiation. The constraining factor in both cases being time. If no real world problem whould have time relevance, it could be argued that fact knowledge is fairly useless. Especially with the internet, where almost any fact knoledge is easier accessible than ever. The truth is, time almost always plays a major role in many problems, so to accrurately depict someones capabilities, there must be some way of checking for fact knowledge. Paper based exams do not allow for a marriage of fact questions and those who ask for transfer whith no restrictions to resources (e.g. the internet, tools and programs).
+Looking at classical paper based exams we find that they often focus either on (semi) closed questions or on open book questions. As students have access to all relevant facts during the entirety open book exams, testing for fact knowledge in these cases is rendered meaningless.
 
-E-exams on the other hand can provide a mixture of both <cite>. <!-- can it really, there need to be facts here --> Consider an exam where in principle every resource could be used. In such an open book exam especially transfer knowledge can easily be tested. As we discussed fact knowledge is also essential part of the examination process. As this fact knowledge, in a real world application must be available in seconds it is only a reasonable thing to just enforce a time restriction to any fact questions. <!-- there must be checking if this works -->
+Still fact knowledge cannot be neglected. For example, consider a doctor, who needs his cheat sheet, in order to conduct open heart surgery. Or an accountant who has to look up the meaning of working capital, every time it shows up. Fact knowledge in the above cases is neccesary, because it is needed immediately. A doctor who does not know his facts may loose lives, an accountant who does not know his vokaulary is nearly useless in any kind of nagotiation. The constraining factor in both cases being time. These examples show that in order to assess for capabilitie a marriage of (semi) closed quesions and open questions is neccessary.
 
-In this way e-exams can achive a hybrid testing form. It allowes examiners to more reallistically assess a students real capabilities. Moving educational assessments <!-- adapting the skillset better --> closer to real world requirements. This also helps to steuer against the trend of Bullemie lernen <cite>. As studendts find themselves forced to wiedergeben sometimes hundereds of pages of scripts, this short term memory is reinforced.
+With E-exams it is fairly easy to implement a _partial_ open book exam that allows for both open and closed task formats.
+
+==
+
+<!--
+These partial open book exams can be realized through time constraints. E-exams can thus provide an environment that resembles real world problems more closely.
+
+Open Book exams depict skills in _high order cognitive processes_ <Krathwohl> way better as they resemble real world scenarios more closely.
+
+Additionally through per question time contostraints closed tasks formats that mainly test for fact knowledge can be implemented. Resulting in partial open book exams.
+
+As e-exams allow easy and equal access to numerous additional resources (i.e. via internet) they make open book exams more feasable.
+
+Seeing exams as an incentive to prepare for reallife problems, it is only sensable to pose questions that resemble reallife problems. Real life problems do not ask for facts but for application and connection of knowledge.
+
+In an exam implementation questions that test for fact knowledge can be seen as closed or semiclosed task formats <ETH>, tasks that rely more strongly on.
+
+Thinking about skillsets reveals another problem of paper based exams. As many have stated, exams often fail to depict real life problems <cite>.
+
+In contrast to exams, real life almost never asks soley for facts, it asks for a brought application of knowledge. It asks for problem solutions, no matter the resource . There is a case to be made to test for fragestellungen <cite>, that come up in real life in order to fairly get a students skill level. When trying to achive this, open book exams may come closest to depicting a real life problem situation <cite>. On the other hand some fact knowledge is of utmost importance <cite>.
+
+
+
+[!E-exams on the other hand can provide a mixture of both <cite>.  Consider an exam where in principle every resource could be used. In such an open book exam especially transfer knowledge can easily be tested. As we discussed fact knowledge is also essential part of the examination process. As this fact knowledge, in a real world application must be available in seconds it is only a reasonable thing to just enforce a time restriction to any fact questions.
+
+In this way e-exams can achive a hybrid testing form. It allowes examiners to more reallistically assess a students real capabilities. Moving educational assessments  closer to real world requirements. This also helps to steuer against the trend of Bullemie lernen <cite>. As studendts find themselves forced to wiedergeben sometimes hundereds of pages of scripts, this short term memory is reinforced.
+ -->
 
 > > E-exams must allow for partial open book exams.
 
-- [ ] Question types
-
-## Change and scale
-
-<!-- This is not really of interest. -->
-
-Some scolars express concerns about the infrastructural scalability of e-exam systems. In their eyes, exams only provide utility with X students or more being part of the exam. This argument ignores the scaleable nature of the an exam system. Moving to e-exams must not be a decision of one course or one Lehrstuhl alone.
-
-- [ ] Größe von e-exams
+- [ ] Question types!]
 
 ## Cheating and randomization
 
@@ -191,7 +222,7 @@ With regard to the configuration and usage of an e-exam tool, it is clear that a
 
 Politics and angst also play into the above problems. As new technologie and software often creates a sense of being overwhelmed there must be a strone emphasis on showing examiners the advantages an e-examination system could give them. E-exams especially show their potential when being widely adopted. As more usage of e-exams can lead to network effects. Especially inside an institution there must be enforcement of the usage of new systems. The faster a new way of working gets adapedt the faster it can improve. In this way also small exams are very valuable. It is even thinkable to get immediate feedback of the examinees to improve the system or to get a students feelings about the exam. As the examination infrastructure is easily scalable, there is not need for smaller exam groups to move back to paper. Questions and questionpools can be created in the same way as for bigger exams and as a new e-exam does not need more resources there is no need to hold back.
 
-=======================================
+======================================= <!-- TODO: Bis hier!! -->
 
 ## From central to decentral e-exams — moving up the ladder
 
@@ -234,3 +265,11 @@ University as a way to help you gain knowledge not a way to test it.
 ## Moving beyond the limits of education
 
 Education really is a problem of scale. Many studies have shown that the big inequalities that we see today in part are enabled by inequalities in education. Through an open education program many universities aim to dwarf this inequality. The biggest parts of the universities education are: Lectures, tutorials and exams. Today already you can view some of the best lectures online, for free. As Harvard takes part in a open education program. Second, through the rise of plattforms such as the stackexchange stack tutorials have become somewhat crowdsolved. Finding a solution to broughtly test students no matter their location would make a enormous step in the right direction.
+
+## Change and scale
+
+<!-- This is not really of interest. -->
+
+Some scolars express concerns about the infrastructural scalability of e-exam systems. In their eyes, exams only provide utility with X students or more being part of the exam. This argument ignores the scaleable nature of the an exam system. Moving to e-exams must not be a decision of one course or one Lehrstuhl alone.
+
+- [ ] Größe von e-exams
