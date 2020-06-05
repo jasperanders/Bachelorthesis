@@ -34,15 +34,15 @@ Section overview:
 
 Put simply central e-exams replace the pen and paper of paper based exams with a computer or tablet. To give intuition of the advantage of e-exams i will focus on _bring-your-own-device_ (BYOD) e-exams. In BYOD exams the device the student is taking the exam on is not provided by the universiyt authority, students bring their own tablet or laptop to take the exam on. The BYOD concept is not new. For example Robert Peregoodof talked about the BYOD implementation of the University of British Columbia in the <Glm> conference.
 
-<!--
-As I want to give intuition, why moving to a _decentralized_ e-examination system might be benificial, I will not discuss other ways of realizing central e-exams then the _bring-your-own-device_ (BYOD) approach.
--->
-
 It is important to note that moving from paper based exams to e-exams should be a strict uprgrade. Still, paper based exams and e-exams are different in some key points. Some things that were considerated best practice must be reevaluated and rethought in order to adequately fit the e-exam context. As I will show these changes do not limit the examination process but rather improve it.
 
 When compared to paper based exams e-exams provide many advantages as <Handke> disscusses in their book. I will devide these into two different types. The fist type are inherent advantages. These are advantages that arise from soley digitizing a paper based exam. These adavantages mainly effect the efficiency of the assessment process.
 
 The other type of advantages are created through additional considerations and by rethinking how paper based exams approach the examination process. These advantages arise mainly from improvements in testing accuracy and equality.
+
+<!--
+As I want to give intuition, why moving to a _decentralized_ e-examination system might be benificial, I will not discuss other ways of realizing central e-exams then the _bring-your-own-device_ (BYOD) approach.
+-->
 
 ## Exams as a logistics problem
 
@@ -64,7 +64,7 @@ Exams must be printed and stapled. As, exam taking students are numerous, it is 
 
 It is not supprising that handeling large amounts of paper results in logistics overhead. Removing the paper, subsequentially removes much of the logistics overhead. In an e-exam all of the exam data is digital. There is no printing, since exams are directly transferred to the students device. Further stundets answers can automatically be retrieved after the exam is over. Exam answers are digitally available. Some, such as multiple choice questions can be automatically evaluated. The correction of the remaining answers is no longer bound to a certain site but can be done remotely. Exam results and feedback could be directly issued to the students. Thus, revision could also be realized decentrally. The digital exam data can then be easly archived.
 
-This comparison illustrates the advantage of e-exams with regard to logistics. Not only is there less movement of employees but more importantly there is no movement of physical paper. Further we find advantages in the digital archiving. Data can be stored space efficiantly with no need for large archives. Adding archives are much saver as redundant backups are a feasable and cheap possibilit.
+This comparison illustrates the advantage of e-exams with regard to logistics. Not only is there less movement of employees but more importantly there is no movement of physical paper. Further we find advantages in the digital archiving. Data can be stored space efficiantly with no need for large physical archives. Adding, archives are much saver as redundant backups are feasable and cheap.
 
 ## The hassel of handwriting
 
@@ -77,9 +77,12 @@ Bad title. This section focuses soley on time improvement, change it?
 
 TD:
 - put in citation about effects of handwriting on grading
+
 -->
 
-Checking an exam for correctness is one of the most time-consuming process in conducting an exam. Moving away from paper can reduce this time drastically making use of two things: First, some question types, such as multiple choice, true or false can be automatically checked. This is an immediate improvement over correcting these questions by hand. Second, as exam answers are available in digital text reading and checking answers is easier. Answers must not be deciphered, correction of exams can be done faster.
+Checking an exam for correctness is one of the most time-consuming process in conducting an exam. Moving away from paper can reduce this time drastically making use of two things: First, some question types, such as multiple choice can be checked automatically. This is an immediate improvement over correcting these questions by hand. Second, as exam answers are available in digital text reading and checking answers is easier. Answers must not be deciphered, correction of exams can be done faster.
+
+Further, the replacement of handwriting with digital text has implication for the equality of answer checking. As <James 1927> shows students with bad handwriting get categorically worse grades than students with better handwriting. E-exams can help to make the correction process fairer and less time consuming.
 
 ## Statistics on the fly
 
@@ -104,19 +107,25 @@ TODO:
 this needs work
 -->
 
-Part of the complexity and time intensiveness of exam creation lays in creating appropriate questions. Although many courses are not unique to one university, sharing of test question is not common. This might be due to the fact that paper based exams do not provide a foundation for collaboration. In paperbased exams there are no standards. Just as there is no elegant way of sharing exams, there is no way of easily using someones exam questions.
+Part of the complexity and time intensiveness of exam creation lays in creating appropriate questions. Although many courses are not unique to one university, sharing of test question is not common. In paperbased exams there are no standards and there is no suitable collaboration platform. In paper based examination there is no real foundation for sharing and reusing exam questions.
 
-E-exams have to make use of an software artefact in oder to leverage their theoretical benifits. Such a artefact allows for an enforcment of a shareable general format. If users create exams in a specific software, implementing a standard is fairly straight foreward. Such a standard already exits under the name of <QTI 2.2>. Having a standard allowes for educators to collaborate to create exams.
+E-exams have to make use of an software artefact in oder to leverage their theoretical benefits. Such a artefact allows for an enforcment of a shareable general format. If users create exams in a specific software, implementing a standard is fairly straight foreward. Such a standard already exits under the name of <QTI 2.2>. Having a standard allowes for educators to collaborate to create exams.
 
-Further exams must not be limited to only a few questions. Exams can come from question pools --- a small subset of questions is selected from a way larger superset. With a large enough question pool exams can be generated automatically. The developmetn and maintenance of a large question pool is very time intensive for a single person, that is why collaboration is so important. Just like open source project are able to
+Further this collaboration must not be limited by a singel exam with only a few questions. Exams can come from question pools --- a small subset of questions is selected from a way larger superset. The development and maintenance of a large question pool is very time intensive for a single person, that is why collaboration is so important. Projects in open source software show how collaboration of many can function with great success.
+
+Large question pools do not only help in exam creation, as they allow to produce exams automatically, it also prevents students from knowing the exam beforhand. This will be further ellaborated in the section about cheating.
+
+==
+
+<!--
+Often exam questions are treated as secrets as they are used again and again. This secrecy can not relyably be enforced. It is genral procedure that students collaborate to create in depth Gedächnisprotokolle <cite>, which are then uploaded for public access. Having a large question pool, makes it almost impossible for a student to prepare all questions beforehand, creating a more sound depiction of the students skillset.
 
 As the Zurich University has proposed a general Format for e-exams <cite>, these exam questions are now easily shared among colleges and other universities. These questions can then be collected in so named question pools. At a point where a question pool is large enough, exams can be randomly generated using the exams [!already present in the pool!]. Instead of conceptualizing new exam questions, only the question pool must be taken care of.
 
-Some scholars such as <Handke> have concerns about filling such a question pool <cite>. If this had to be done by one examiner, alone this would really be a serious task but in times of wide spread social media sharing questions or entire pools is worth consideration <!-- has this been done?? --> . As a other way of filling question pools, questions could be thought out by students as exam preperation <!-- where does this come from -->. Filling the question pool may seem like a daunting task, but making utility of crowd thinking and past experiences can dramatically help this endavour <!-- this is too sloppy -->.
+Some scholars such as <Handke> have concerns about filling such a question pool <cite>. If this had to be done by one examiner, alone this would really be a serious task but in times of wide spread social media sharing questions or entire pools is worth consideration. As a other way of filling question pools, questions could be thought out by students as exam preperation. Filling the question pool may seem like a daunting task, but making utility of crowd thinking and past experiences can dramatically help this endavour.
 
 Here e-exams show their capabilies in network effects. As more examiners and universities use e-exams, more questions are generated for sharing. Being capable to make use of social media like structures would really help everybody to generate high quality exams fast. As many would argue, it is easier to review an already good selection of questions and pick good ones than to rethink them all from scratch. [!At the moment no sturcture exists which makes use of such ideas...!]
-
-Having created a big enough question pool does not only help in exam creation, it also prevents students from knowing the exam beforhand. Often exam questions are treated as secrets as they are used again and again. This secrecy can not relyably be enforced. It is genral procedure that students collaborate to create in depth Gedächnisprotokolle <cite>, which are then uploaded for public access. Having a large question pool, makes it almost impossible for a student to prepare all questions beforehand <!-- just like in a drivers license exam --> , creating a more sound depiction of the students skillset.
+-->
 
 ## Partial Open Book Exams
 
@@ -143,9 +152,7 @@ Looking at classical paper based exams we find that they often focus either on (
 
 Still fact knowledge cannot be neglected. For example, consider a doctor, who needs his cheat sheet, in order to conduct open heart surgery. Or an accountant who has to look up the meaning of working capital, every time it shows up. Fact knowledge in the above cases is neccesary, because it is needed immediately. A doctor who does not know his facts may loose lives, an accountant who does not know his vokaulary is nearly useless in any kind of nagotiation. The constraining factor in both cases being time. These examples show that in order to assess for capabilitie a marriage of (semi) closed quesions and open questions is neccessary.
 
-With E-exams it is fairly easy to implement a _partial_ open book exam that allows for both open and closed task formats.
-
-==
+With E-exams it is fairly easy to implement _partial_ open book exams that allow for both open and closed task formats. E-exams can achive this by enacting per question time constraints. Closed questions are imposed with a short answer frame that leaves no time for looking up the actual answer. Further, access to question must be restricted after the time frame has expired.
 
 <!--
 These partial open book exams can be realized through time constraints. E-exams can thus provide an environment that resembles real world problems more closely.
@@ -164,16 +171,14 @@ Thinking about skillsets reveals another problem of paper based exams. As many h
 
 In contrast to exams, real life almost never asks soley for facts, it asks for a brought application of knowledge. It asks for problem solutions, no matter the resource . There is a case to be made to test for fragestellungen <cite>, that come up in real life in order to fairly get a students skill level. When trying to achive this, open book exams may come closest to depicting a real life problem situation <cite>. On the other hand some fact knowledge is of utmost importance <cite>.
 
-
-
 [!E-exams on the other hand can provide a mixture of both <cite>.  Consider an exam where in principle every resource could be used. In such an open book exam especially transfer knowledge can easily be tested. As we discussed fact knowledge is also essential part of the examination process. As this fact knowledge, in a real world application must be available in seconds it is only a reasonable thing to just enforce a time restriction to any fact questions.
 
 In this way e-exams can achive a hybrid testing form. It allowes examiners to more reallistically assess a students real capabilities. Moving educational assessments  closer to real world requirements. This also helps to steuer against the trend of Bullemie lernen <cite>. As studendts find themselves forced to wiedergeben sometimes hundereds of pages of scripts, this short term memory is reinforced.
- -->
 
 > > E-exams must allow for partial open book exams.
 
-- [ ] Question types!]
+- [ ] Question types!
+ -->
 
 ## Cheating and randomization
 
@@ -185,15 +190,44 @@ Impications of cheating:
 - using open book design may weaken cheating
 -->
 
-When thinking about any assessment the consideration of academic dishonesty (e.g. cheating in an exam) is one of the most important parts. Moving from paper to e-exams poses the questions what parts -- if any -- must be adjusted to accomodate for changed circumstances and environments.
+When thinking about any assessment the consideration and handeling of academic dishonesty (e.g. cheating in an exam) is one of the most important parts. Moving from paper to e-exams poses the questions what parts -- if any -- must be adjusted to accomodate for changed circumstances and environments.
 
+In his paper <McGabe> poses seven fields of possible cheating in exams which he then evaluates by accurance and percived severeness. Six of which are relevant for this thesisis purpose. The fields are can be described as follows:
+
+**Student cooperation**:
+
+- **Knowing the questions** Learning what is on an exam from someone who has already taken it.
+- **Cooperation with outsiders** Helping someone else cheat on an exam.
+- **Cooperation with fellow examinees** Copying from another student on an exam with their knowledge.
+
+**Use of disallowed aid**:
+
+- **Exploit environmental circumstances** Copying from another student on an exam without their knowledge.
+- **Use of unauthorised crib/cheat notes** Bringing prepared cheat notes to use in the exam.
+- **Use of electronic, unauthorized aid** Using e.g. a smartphone to google or review lecture material.
+
+Before thinking about how to obviate these cheating scenarios an important statement must be made: Cheating cannot completely be eliminated. There are always ways for students to engage in cheating. E-exams cannot change that. But compared to paper based exams some measures against cheating may be more effective.
+
+**Knowing a question.** As the question finding process in a time consuming process, a strategy can be to keep questions as secret as possible and reuse them throughout many exams. This is a rather uneffective strategie as platforms such as studydrive often provide comprehensive protocols from memory of the given exam. E-exams can choose a different approach. Instead of having few questions and keeping them secret, e-exams can levarage collaborative question pools. At a certain point it becomes unfeasable for students to prepare for every available question as question pools grow larger.
+
+**Cooperation with outsiders** and **fellow examinees**. For closed questions this cooperation can be prevented by using strict time restictions. As already stated above these questions fall in the category _Either you know the answer or you don't_ there is no need for a lengthy reflection period. As time constraints are tight, there really is no way of communicating with others and solving the question. For more open question types the time limitation is not as tight. At the same time answers require more in depth considerations. To ensure that students write down their own ideas and cannot share their thoughs, the copy and paste functionallity can be disabled. Further, e-exams can easily be randomized, thus preventing students form peeking or signaling solutions to eachother.
+
+**Exploit environmental circumstances.** Again randomization can solve this problem. As questions appear in a different order for each student even multiple choice questions can not simply be copyed.
+
+**Use of unauthorized cheat notes or electronic aid.** Following the argument made about partial open book exams we find that besides time constraints no additional measures must be enforced. Cheat notes really are not of much help if there is no time to use them.
+
+We find these cheating scenarios to be to a large degree managed by e-exams. Still, as specific software is in use the degree of cheating must constantly assessed and measure against bugs or security flaws must be identified.
+
+<!--
 As <cite> found in his paper there are two main categories when it comes to cheating. Planned and spontaineous cheating. Spontainous cheating accures in stress situations where the student feels overwehlmed. It may include looking at other students worksheets or [!even going to the toilet!] to look something up on the internet. Planned cheating on the other hand is intended by the stundet beforhand. The student deposits a cheat sheet in the bathroom, or directly to the exam. Even if the Folgen of cheating are in most cases a failure of the exam, cheating is still common among students. A study of ... found that measures against cheating had almost no effect <cite>.
 
 We must keep this in mind when thinking about e-exams. Against spontaious cheating, some measure can easily be enforced. As tests can be highly randomized looking at a neighbours screen may lead to no new information.
 
 Otherwise, as in a this first step we just replaced paper with a computer there are basically the same eforcements possible. Software such as the open source safe exam browser of the ETH Zürich (link) can be used to make other programs on the device inaccessible during the exam <cite>. So in theory e-exams can be just as safe as paper based exams. In his paper <cite> found that many cheating methods in e-exams can be circumvised by simple measures.
 
-As I discussed earlyer cheating may not even be a big concern if exams rely on (partial) open book. Open book exams do not need restriction of resources. For an open book exam not even software has to be restricted on students devices. This has also the benefit, that such a system has less parts that must be maintained, thus being less prone to errors. <!-- this is not very good. -->
+As I discussed earlyer cheating may not even be a big concern if exams rely on (partial) open book. Open book exams do not need restriction of resources. For an open book exam not even software has to be restricted on students devices. This has also the benefit, that such a system has less parts that must be maintained, thus being less prone to errors. 
+
+-->
 
 ## Problems
 
