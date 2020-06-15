@@ -66,7 +66,7 @@ It is not supprising that handeling large amounts of paper results in logistics 
 
 This comparison illustrates the advantage of e-exams with regard to logistics. Not only is there less movement of employees but more importantly there is no movement of physical paper. Further we find advantages in the digital archiving. Data can be stored space efficiantly with no need for large physical archives. Adding, archives are much saver as redundant backups are feasable and cheap.
 
-## The hassel of handwriting
+### The hassel of handwriting
 
 <!--
 Bad title. This section focuses soley on time improvement, change it?
@@ -225,68 +225,68 @@ We must keep this in mind when thinking about e-exams. Against spontaious cheati
 
 Otherwise, as in a this first step we just replaced paper with a computer there are basically the same eforcements possible. Software such as the open source safe exam browser of the ETH Zürich (link) can be used to make other programs on the device inaccessible during the exam <cite>. So in theory e-exams can be just as safe as paper based exams. In his paper <cite> found that many cheating methods in e-exams can be circumvised by simple measures.
 
-As I discussed earlyer cheating may not even be a big concern if exams rely on (partial) open book. Open book exams do not need restriction of resources. For an open book exam not even software has to be restricted on students devices. This has also the benefit, that such a system has less parts that must be maintained, thus being less prone to errors. 
+As I discussed earlyer cheating may not even be a big concern if exams rely on (partial) open book. Open book exams do not need restriction of resources. For an open book exam not even software has to be restricted on students devices. This has also the benefit, that such a system has less parts that must be maintained, thus being less prone to errors.
 
 -->
 
-## Problems
+## From central to decentral e-exams
 
-<!--
-This section cannot be called problems! Maybe Worries?
-
-- What problems are there why are they wrong.
-- change management/being afraid of new tools
--->
-
-Many <cite> have pointed at problems that may arise from switchig from paper based exams to e-exams. Some of these problems are not of any concern as techincal advancements have made them obsolete.
-
-<cite> have talked in their paper about the provision of technical infrastructure. They pose a question about the utility and scale of such a infrastukture. As the [paper] aged the techinical sircumstances changed, nowadays it is almost universal for students to have access to a webbrowser <!-- why a web browser? see section about technical requirements --> . And really thats all they need. Although not recommended, exams could really be taken on any smartphone. <!-- good gist. bad writing. -->
-
-Another concern touches upon connection problems <cite>. There is no doubt upon e-exam using a client--server structure <!-- technical requ. -->. Dependant on the implementation, this may make e-exams prone to connection errors. For example if after every question a new question must be fetched from the server having connection errors can quickly ruin the exam for anyone that is taking it.
-
-> Req: e-exams must sustain in unreliable connection environments
-
-<!-- this has to come in the solution part. --> On the other hand there is the possibility to store the exam and the given answers in the local storage of the browser. As long as the browser is not reinstalled or forced to clear its chache the exam information is secure. To prevent fiddelling with the local chache it could be encrypted. Using this method e-exams could be counducted even be conducted offline, only to send in the exams solution and to download the exam questions an internet connection would be needed. Of course such a soulution must be tested firmly to make sure that any way of hacking the exam is prevented.
-
-With regard to the configuration and usage of an e-exam tool, it is clear that a soulution that is easily usable for novice users but yields potential for more advanced users is of utmost importance. <!-- only problems, not solutions --> Examiners must have the chance to learn the new tool, ideally this is supported by the usage of hight standards of user interface design.
-
-Politics and angst also play into the above problems. As new technologie and software often creates a sense of being overwhelmed there must be a strone emphasis on showing examiners the advantages an e-examination system could give them. E-exams especially show their potential when being widely adopted. As more usage of e-exams can lead to network effects. Especially inside an institution there must be enforcement of the usage of new systems. The faster a new way of working gets adapedt the faster it can improve. In this way also small exams are very valuable. It is even thinkable to get immediate feedback of the examinees to improve the system or to get a students feelings about the exam. As the examination infrastructure is easily scalable, there is not need for smaller exam groups to move back to paper. Questions and questionpools can be created in the same way as for bigger exams and as a new e-exam does not need more resources there is no need to hold back.
-
-======================================= <!-- TODO: Bis hier!! -->
-
-## From central to decentral e-exams — moving up the ladder
-
-The previous section was about moving away from paper and how this can benefit the examination process. To now improve upon that process even further, we must look at the shortcomings of centralized e-exams.
+In the previous section I talked about advantages of central e-exams compared to paper based exam. One key characteristic of e-exams is that they are issued via the internet. We can use this to remove any local component of e-exams, thus making them decentalized. In the following, I will talk about advantages that decentral e-exams bare and the implications of decentralizing exams on cheating and infrastructural considerations.
 
 ## E-Exams as an logistics problem
 
 <!-- find source to proove its a problem -->
 
-As seen above, e-exams can be immensely more efficient in terms of logistics, compared to a paper based exam. There are however still some shortcomings. First, consider the allocation of students to their respective test taking location. As exams completely get replaced, as their are not test taking locations any more. This makes the process of exam coordination way easier.
+As seen above, e-exams can be immensely more efficient in terms of logistics, compared to a paper based exam. There are however still some shortcomings. First, consider the allocation of students to their respective test taking location. As different students take part in different exams this allocation grows ever more complex and requires lots of planning of a central authority. <!-- Look at software for proof --> Making e-exams decentral allows for this process to be streamlined enourmously.
 
-Second, an exam takes many humans to supervise students during their exam. This can be improved by e-exams. To ensure, these improvements really take effect we need to take earlier considerations into account. As we discussed open book exams are realizable quite easily using e-exams. As open book exams allow for the use of any material, for the einschränkung of Material usage there really is no need for supervision.
+Second, for supervision of exams human resources are needed. The <KIT> for example recommends two supervisors per location. E-exams can free up some of these resources. To do this we need to take earlier considerations about partial open book exams into account. As I layed out, Partial open book exams allow for tests that do not ask for supervision, making existing supervison obsolete.
+
+When talking about decentralizing e-exams I think it is important to say that the goal is not to force students to write their exams at home. There still can be space reserved for exams by the university. The managemant and supervision of these spaces just becomes magnitudes more easy.
 
 ## Cheating
 
-A nother reason for supervison might be that, students collaborate and thus cheat the idea of open book exams. This can be counterd through the use of heavy randomization. As students encounter questions at different times, collaboration to answer them is hardened. Also copy and pasting must be repressed, as it allows for quick sharing of answers.
+The main points that were made about cheating in section <XX>, still hold true when talking about decentralized exams. A big difference however can be found in the authentication of students. In a central exam each students identity is checkt by an examinee. The students signature and the student identification card provide identification. In decentalized exams this direct checking is no longer possible. There is no satifactory solution to remotly checking a students identity. Still, e-exams have ways to deterr this kind of dishonesty.
 
+A first measure might be to make use of integrated webcams and microphones of the devices at hand. This low key supervison creates a barrier. Students get a feeling of doing really commiting academic fraud. This is important, as students who really put energy into faking their identity can fool the decentral system just as easily as the central system. The sole existance of any measures makes the students behave more honest. Just as video survailance makes crime less common at public places <cite>. This video and sound data can be reviewed if needed.
+
+<!--
 We already discussed the need for local storage above. Earlier we takeld about it as a measure against data loss in event of a connection error. Moving e-exams into the decentralized realm poses the need for encrypted storage of data. As data is send from the local storage tempering with the data must be prevented at all cost.
+-->
 
-## Less distractions
+## Infrastructure
 
-Some studies find that exams are full of distractions <cite>. They create a stressfull atmosphere. This is especially bad for studentes. Taking exams at home can eliminate this stress factor. Even students who do not have a quite place to write their exams, there could be made room for examiees in either libaries or lecture halls <!-- this is very sloppy --> . Because students dont need any supervision and no special equipment they really are independent from any place.
+I talked about decentralized exams in form of BYOD exams. These devices are heterogenious. They run different operating systems, are produced by different companies and have different specifications. It makes little sense to develop propriatary software for each device. E-exam can although make use of browser technology. As modern web-applications do not lack speed or functionallity and can be adopted cross platform. The software is hosted at a central instance where it can be maintained and improved.
 
-## Identity
-
-We may delay cheating and cooperation through different measures such as time restictions and randomization. How can we now check if the student we are examing really is the student we want to examine. There is no satifactory answer to this question. In a paper paper based exam student identity is überprüft by the examiner. By looking at the student identity card and letting the student sing the identiy is prooven. If there would really be a big concern about students taking other students exams, checking a students identiy this way is easily fooled. The testtaker must only somewhat resemble the testaker, as the student ids photographs have bad resolutions and are only glanced upon. It can be argued that letting someone take your whole exam is simply to risky.
-
-To get at least some information about the identity of the test taker and to make the hurdle to cheat higher, students could be monitored by their webcams or their smartphones. As alone the thought of being watched already reduces the thought of doing something naughty makes many students rethink their desire to cheat.
-
-As a nother measure, the microphone might also be accessed. Tapping into what the student hears helps examiners to make out if a student is talkig to someone else. Through the use of audio meters and stichproben not every students video feed must be watched, only where verdacht is imment a investigation can be angebracht.
-
-- [ ] cooperation
+Of course e-exams need a internet connection. Still, connection issues are not a big issue. Through advances in web technologies it is feasable to make web applications available in offline use. Even if the device looses power, exams can be resumed after a reboot.
 
 =======================================
+
+<!--
+## Problems
+
+
+This section cannot be called problems! Maybe Worries?
+
+- What problems are there why are they wrong.
+- change management/being afraid of new tools
+
+As I have show above e-exams bare many theoratical advantages over paper based exams. In reality these advantages can only be realized through fitting software.
+
+Many <cite> have pointed at problems that may arise from switchig from paper based exams to e-exams. Some of these problems are not of any concern as techincal advancements have made them obsolete.
+
+<cite> have talked in their paper about the provision of technical infrastructure. They pose a question about the utility and scale of such a infrastukture. As the [paper] aged the techinical sircumstances changed, nowadays it is almost universal for students to have access to a webbrowser <!-- why a web browser? see section about technical requirements  . And really thats all they need. Although not recommended, exams could really be taken on any smartphone. <!-- good gist. bad writing.
+
+Another concern touches upon connection problems <cite>. There is no doubt upon e-exam using a client--server structure <!-- technical requ. . Dependant on the implementation, this may make e-exams prone to connection errors. For example if after every question a new question must be fetched from the server having connection errors can quickly ruin the exam for anyone that is taking it.
+
+> Req: e-exams must sustain in unreliable connection environments
+
+<!-- this has to come in the solution part.  the other hand there is the possibility to store the exam and the given answers in the local storage of the browser. As long as the browser is not reinstalled or forced to clear its chache the exam information is secure. To prevent fiddelling with the local chache it could be encrypted. Using this method e-exams could be counducted even be conducted offline, only to send in the exams solution and to download the exam questions an internet connection would be needed. Of course such a soulution must be tested firmly to make sure that any way of hacking the exam is prevented.
+
+With regard to the configuration and usage of an e-exam tool, it is clear that a soulution that is easily usable for novice users but yields potential for more advanced users is of utmost importance. <!-- only problems, not solutions Examiners must have the chance to learn the new tool, ideally this is supported by the usage of hight standards of user interface design.
+
+Politics and angst also play into the above problems. As new technologie and software often creates a sense of being overwhelmed there must be a strone emphasis on showing examiners the advantages an e-examination system could give them. E-exams especially show their potential when being widely adopted. As more usage of e-exams can lead to network effects. Especially inside an institution there must be enforcement of the usage of new systems. The faster a new way of working gets adapedt the faster it can improve. In this way also small exams are very valuable. It is even thinkable to get immediate feedback of the examinees to improve the system or to get a students feelings about the exam. As the examination infrastructure is easily scalable, there is not need for smaller exam groups to move back to paper. Questions and questionpools can be created in the same way as for bigger exams and as a new e-exam does not need more resources there is no need to hold back.
+
+======================================= <!-- TODO: Bis hier!!
 
 ## Bonus
 
@@ -298,7 +298,7 @@ Education really is a problem of scale. Many studies have shown that the big ine
 
 ## Change and scale
 
-<!-- This is not really of interest. -->
+<!-- This is not really of interest.
 
 Some scolars express concerns about the infrastructural scalability of e-exam systems. In their eyes, exams only provide utility with X students or more being part of the exam. This argument ignores the scaleable nature of the an exam system. Moving to e-exams must not be a decision of one course or one Lehrstuhl alone.
 
@@ -307,3 +307,9 @@ Some scolars express concerns about the infrastructural scalability of e-exam sy
 ## Making the move seamless
 
 As briefly touched upon, e-exams must be at least as comfortable as their paper based counterpart. This especially is important when we think about nature of e-exams. As e-exams rely in a client server model they also rely on internet connection.
+
+## Freeing up resources
+
+## Democratic exam dates
+
+ -->
