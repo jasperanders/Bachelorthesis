@@ -1,0 +1,1 @@
+pandoc ../Thesis/md/thesis.md -o ../Thesis/pdf/thesis.pdf

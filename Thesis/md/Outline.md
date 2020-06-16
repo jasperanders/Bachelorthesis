@@ -18,10 +18,11 @@ Digitizing exams is no new idea. Although, most concepts and implementations foc
 Further, test-taking applications are found in many _LMS' (Learn Management Systems)_ such as Ilias, Moodle or Blackboard. Unfortunately, most often these applications focus on student self-assessment. They also majorly **vary in quality and utility**. As they are integrated in a complete LMS, changing to the _best_ implementation is in many cases not an option.
 Last, as exam data is **highly confidential**, there is a strong argument to be made against closed source solutions. It is crucial to know exactly how the used application works and how data is handled. Adding, open source projects are less prone to major security issues as the development can leverage the crowdsourcing capabilities that an open source system provides.
 
-## An overview of criteria and derived questions.
+## An overview of criteria and derived questions
 
 The main criteria emerge as:
 
+- The electronic examination process must be advantageous compared to paper based examination.
 - The exam has to have a high level of integrity. Students cannot fake their identity, cheat, cooperate, use disallowed aid or access exam questions beforehand.
 - The exam questions must aim to fairly extract a students' skill level.
 - Students must be treated equally in the answer checking process.
