@@ -278,7 +278,7 @@ We find these cheating scenarios to be to a large degree managed by e-exams. Sti
 
 - Exams must have the ability to be generated from question pools.
 - Question order for individual students must be randomizable.
-- Exams can be partial open book exams.
+- Exams can be partial open book exams. (See Section <PartialOpenBook>)
 
 <!--
 As <cite> found in his paper there are two main categories when it comes to cheating. Planned and spontaineous cheating. Spontainous cheating accures in stress situations where the student feels overwehlmed. It may include looking at other students worksheets or [!even going to the toilet!] to look something up on the internet. Planned cheating on the other hand is intended by the stundet beforhand. The student deposits a cheat sheet in the bathroom, or directly to the exam. Even if the Folgen of cheating are in most cases a failure of the exam, cheating is still common among students. A study of ... found that measures against cheating had almost no effect <cite>.
@@ -355,6 +355,9 @@ Befor comparing these solutions there are some features that are met by every to
 - A way to automatically grade closed questions.
 - A way to randomize the order of exam questions.
 - A in depth documentation and/or community.
+- Finished exams can be collected remotely.
+- Exam data is stored at a central instance and can be accessed remotely.
+- Examination is not bound to a singe location and issued over browser.
 
 ### Learn Management System vs. Standalone Solution
 
