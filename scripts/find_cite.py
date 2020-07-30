@@ -27,5 +27,3 @@ for line in i:
 o.close()
 i.close()
 print('written and closed')
-
-

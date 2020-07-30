@@ -28,21 +28,39 @@ Taking the current pandemic under consideration, it may not be an option to just
 
 It is important to notice, that _Decentralized E-exams (DE-exams)_ differ from _paper based exams (PB-exams)_ and even from _centralized e-exams (CE-exams)_ in some key points. Foremost, the examiner has less control over the environment the exam is taken under. This raises questions about exam integrity and fairness. These questions must be addressed through careful conceptualization of questions and intelligent [software] design.
 
-Digitizing exams is no new idea. Although, most concepts and implementations focus on conducting e-exams in the same environment as _PB-exams_. With regard to COVID-19 this is not an option. Of course some _DE-exams_ are **already conducted** today. These exams are, for the most part, making use of a **proctoring system**. In such a system a supervisor can access the examinees' device, can monitor all their activity and will watch them through their webcam. This proctoring process is costly. It hardly scales and still easily can be fooled.
+Digitizing exams is no new idea. Although, many concepts [cite papers that talk about byod or multi media room exams] and implementations focus on conducting e-exams in the same environment as _PB-exams_. With regard to COVID-19 this is not an option. Of course some _DE-exams_ are **already conducted** today. These exams are, for the most part, making use of a **proctoring system**. In such a system a supervisor can access the examinees' device, can monitor all their activity and will watch them through their webcam. This proctoring process is costly. It hardly scales and still easily can be fooled.
 Further, test-taking applications are found in many _LMS' (Learn Management Systems)_ such as Ilias, Moodle or Blackboard. Unfortunately, most often these applications focus on student self-assessment. They also majorly **vary in quality and utility**. As they are integrated in a complete LMS, changing to the _best_ implementation is in many cases not an option.
 Last, as exam data is **highly confidential**, there is a strong argument to be made against closed source solutions. It is crucial to know exactly how the used application works and how data is handled. Adding, open source projects are less prone to major security issues as the development can leverage the crowdsourcing capabilities that an open source system provides.
 
 ### An overview of criteria and derived questions
 
-The main criteria emerge as:
+In his book Handke provides requirements that exams need to meet. These can be segmented into groups:
 
-- The electronic examination process must be advantageous compared to paper based examination.
-- The exam has to have a high level of integrity. Students cannot fake their identity, cheat, cooperate, use disallowed aid or access exam questions beforehand.
-- The exam questions must aim to fairly extract a students' skill level.
-- Students must be treated equally in the answer checking process.
-- The e-exam taking process must be at least be as stress-free as the paper base equivalent.
+Requirements that mainly influence the direct content of the exam:
 
-Having identified these main criteria, I will ask _sub-research questions_ on how to meet these criteria. In doing this I will give insight into how other systems perform.
+- **Legitimiacy**. Assessment formats and content must fit the leagal framwork of the university and the law.
+
+- **Equal Validity.** Individual exams part of one assessment process should be equal in content and difficulty.
+
+Requirements that mainly influence the technical implementation of how the examination system handels data:
+
+- **Protection of Data.** Data of examinees is persoal data, as such it must be protected from missuse.
+
+- **Associatablity.** Taken exams must be clearly mapped to the examinee and vice versa.
+
+- **Integrety.** Exam data must maintain consistency, accuracy and trustworthyness thoughout its entire lifetime.
+
+Requirements that mainly influence interactions of examinees and examiners with the examination system:
+
+- **Protection against cheating.** Exams must be protected against manipulation of exam outcome by examinees.
+
+- **Equal Treatment.** Individual examinees must be treated equally.
+
+- **Protection against contestation.** No formal, or technical deficiencies should accure that would question the validity of the exam.
+
+- **Transparency.** The examination process and results must be verifiable.
+
+This thesis focuses on a software artefact for conducting e-exams. This artefact ultimately cannot influence the content of the exams that are created with it. Subsequenteally only requirements that influence data handeling and interaction with examinees and examiners are of interest.
 
 ## The case for e-exams
 
@@ -67,7 +85,7 @@ Put simply central e-exams replace the pen and paper of paper based exams with a
 
 It is important to note that moving from paper based exams to e-exams should be a strict uprgrade. Still, paper based exams and e-exams are different in some key points. Some things that were considerated best practice must be reevaluated and rethought in order to adequately fit the e-exam context. As I will show these changes do not limit the examination process but rather improve it.
 
-When compared to paper based exams e-exams provide many advantages as <Handke> disscusses in their book. I will devide these into two different types. The fist type are inherent advantages. These are advantages that arise from soley digitizing a paper based exam. These adavantages mainly effect the efficiency of the assessment process.
+When compared to paper based exams e-exams provide many advantages as <Handke> disscusses in their book. I will devide these into two different types. The fist type are inheren t advantages. These are advantages that arise from soley digitizing a paper based exam. These adavantages mainly effect the efficiency of the assessment process.
 
 The other type of advantages are created through additional considerations and by rethinking how paper based exams approach the examination process. These advantages arise mainly from improvements in testing accuracy and equality.
 
