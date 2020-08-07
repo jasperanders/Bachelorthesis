@@ -32,21 +32,19 @@ Digitizing exams is no new idea. Although, many concepts [cite papers that talk 
 Further, test-taking applications are found in many _LMS' (Learn Management Systems)_ such as Ilias, Moodle or Blackboard. Unfortunately, most often these applications focus on student self-assessment. They also majorly **vary in quality and utility**. As they are integrated in a complete LMS, changing to the _best_ implementation is in many cases not an option.
 Last, as exam data is **highly confidential**, there is a strong argument to be made against closed source solutions. It is crucial to know exactly how the used application works and how data is handled. Adding, open source projects are less prone to major security issues as the development can leverage the crowdsourcing capabilities that an open source system provides.
 
-### An overview of criteria and derived questions
+### An overview of requirements
 
-In his book Handke provides requirements that exams need to meet. These can be segmented into groups:
+We find e-exams to be advatageous in a variaty of ways. Still e-exams are only valid if they can meet the same requirements that we are asked for in paperbased exams. In his book, Handke provides suitable requirements. The requirements are limited to topics on which the e-exam software has direct influence (e.g. requirements concerning exam content are not being considerd). Further these requirements can be devided into categories:
 
-Requirements that mainly influence the direct content of the exam:
+First, a requirement that defines the desired outcome of the exam:
 
-- **Legitimiacy**. Assessment formats and content must fit the leagal framwork of the university and the law.
-
-- **Equal Validity.** Individual exams part of one assessment process should be equal in content and difficulty.
+**General Validity**. Exams should aim to provide an accurate depiction of an examinees competence level.
 
 Requirements that mainly influence the technical implementation of how the examination system handels data:
 
 - **Protection of Data.** Data of examinees is persoal data, as such it must be protected from missuse.
 
-- **Associatablity.** Taken exams must be clearly mapped to the examinee and vice versa.
+- **Attributability.** Taken exams must uniquely map to the examinee and vice versa.
 
 - **Integrety.** Exam data must maintain consistency, accuracy and trustworthyness thoughout its entire lifetime.
 
@@ -60,7 +58,7 @@ Requirements that mainly influence interactions of examinees and examiners with 
 
 - **Transparency.** The examination process and results must be verifiable.
 
-This thesis focuses on a software artefact for conducting e-exams. This artefact ultimately cannot influence the content of the exams that are created with it. Subsequenteally only requirements that influence data handeling and interaction with examinees and examiners are of interest.
+This thesis focuses on a software artefact for conducting e-exams. The artefact ultimately cannot influence the content of the exams that are created with it. Subsequenteally only requirements that influence data handeling and interaction with examinees and examiners are of interest.
 
 ## The case for e-exams
 
