@@ -58,7 +58,33 @@ Requirements that mainly influence interactions of examinees and examiners with 
 
 - **Transparency.** The examination process and results must be verifiable.
 
-This thesis focuses on a software artefact for conducting e-exams. The artefact ultimately cannot influence the content of the exams that are created with it. Subsequenteally only requirements that influence data handeling and interaction with examinees and examiners are of interest.
+Having identified these requirements, finding the matching design principles is the next step.
+
+## General Validity
+
+As the <ETH> states in their paper, examinations should support the purpose of university to produce highly capable individuales. As much of a students academic success is based on their performance in exams, students are highly incentivised to focus their studies on the given exam format. This interdependency between knowledge aquisition and examination shows the importancy of exam design and poses the question of what and how to test. E-exams enable assessments to more closely depict a students actual skill level.
+
+Questions can be categorized into main groups <ETH>:
+
+- **(Semi) Closed questions**, which mainly revolve around the demonstration of factual knowledge. Solutios are given by using a format like multipe choice (closed) or simple text input (semi-closed). _e.g. "What does *BYOD* stand for?"_
+
+- **Competence questions**, which are suited to test for a certain practical skill. Solutions are given in form of an implementation of the specific task at hand. _e.g. "Using the software, implement an e-exam about e-learning."_
+
+- **Essay-type questions**, which are suited for assessing transfer knowledge and understanding. Solutions are given by free text input. _e.g. "Explain why subjects in computer engineering are especially well suited for e-exams."_
+
+Further we find different degrees of allowed aid. In open book exams, students have access to any resource, they feel they need in order to solve the question at hand. These open book exams rely mostly on both competence and essay-type questions. It could be argued that these typs of questions resemble a real world szenario more closely in which access to information is rarely limited. Meanwhile closed question are renderd insignificant by easy access to factual knowledge. In order to ask closed questions it is therefore necessary to restrict access to any aid.
+
+Classical paper based exam do not provide any way of combinign both degrees of allowed aid. Therefore some of the question groups tend to be neglected. Still none of the question types can be neglected.
+// ToDo: :)
+For example, consider a doctor, who needs his cheat sheet, in order to conduct open heart surgery. Or an accountant who has to look up the meaning of working capital, every time it shows up. Fact knowledge in the above cases is neccesary, because it is needed immediately. A doctor who does not know his facts may loose lives, an accountant who does not know his vokaulary is nearly useless in any kind of nagotiation. The constraining factor in both cases being time. These examples show that in order to assess for capabilitie a marriage of (semi) closed quesions and open questions is neccessary.
+
+With E-exams it is fairly easy to implement _partial_ open book exams that allow for both open and closed task formats. E-exams can achive this by enacting per question time constraints. Closed questions are imposed with a short answer frame that leaves no time for looking up the actual answer. Further, access to question must be restricted after the time frame has expired. This results in a strict question taking order. Students must not be allowed to jump between questions. Also it is important for questions in order to enforce _singele question time restrictions_ to be displayed on at a time.
+
+================================================================================
+
+================================================================================
+
+================================================================================
 
 ## The case for e-exams
 
@@ -203,22 +229,6 @@ Moving beyond time and efficiancy improvements.
 - Fair depiction of skill
 - introduction into open book exams
 -->
-
-Untill now I discussed advantages of e-exams that require no rethinking of exam content. E-exams enable assessments to more closely depict a students actual skill level. As the <ETH> states in their paper, examinations should support the purpose of university to produce highly capable individuales. As much of a students academic success is based on their performance in exams, students are highly incentivised to focus their studies on the given exam format. This interdependency between knowledge aquisition and examination shows the importancy of exam design and poses the question of what and how to test.
-
-Questions can be categorized into main groups <ETH>:
-
-- **(Semi) Closed questions**, which mainly revolve around the demonstration of factual knowledge. Solutios are given by using a format like multipe choice [closed] or simple text input [semi-closed](e.g. "What does _BYOD_ stand for?")
-- **Competence questions**, which are suited to test for a certain practical skill. Solutions are given in form of an implementation of the specific task at hand. (e.g. "Using the software, implement an e-exam about e-learning.")
-- **Essay-type questions**, which are suited for assessing transfer knowledge and understanding. Solutions are given by free text input. (e.g. "Give reasons why subjects in computer engineering are especially well suited for e-exams.")
-
-The last two types can also be set in the context of an open book exam. In which students have access to any resource they feel they need in order to solve the question at hand. These open book tasks most closely reseble real world problems and thus are highly suitable for assessing a students capabilities.
-
-Looking at classical paper based exams we find that they often focus either on (semi) closed questions or on open book questions. As students have access to all relevant facts during the entirety open book exams, testing for fact knowledge in these cases is rendered meaningless.
-
-Still fact knowledge cannot be neglected. For example, consider a doctor, who needs his cheat sheet, in order to conduct open heart surgery. Or an accountant who has to look up the meaning of working capital, every time it shows up. Fact knowledge in the above cases is neccesary, because it is needed immediately. A doctor who does not know his facts may loose lives, an accountant who does not know his vokaulary is nearly useless in any kind of nagotiation. The constraining factor in both cases being time. These examples show that in order to assess for capabilitie a marriage of (semi) closed quesions and open questions is neccessary.
-
-With E-exams it is fairly easy to implement _partial_ open book exams that allow for both open and closed task formats. E-exams can achive this by enacting per question time constraints. Closed questions are imposed with a short answer frame that leaves no time for looking up the actual answer. Further, access to question must be restricted after the time frame has expired. This results in a strict question taking order. Students must not be allowed to jump between questions. Also it is important for questions in order to enforce _singele question time restrictions_ to be displayed on at a time.
 
 **Requirements:**
 
