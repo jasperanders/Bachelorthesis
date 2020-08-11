@@ -182,15 +182,40 @@ Exam data must be uniquely traceable to examinees. This can be easily realized b
 
 To assure solid data protection, strong user rights management must be enacted. This guarantees that only authorized groups can view or correct exams. In this way data is largely protected from missuses.
 
-<!-- Das hier ist einfach noch schlecht! -->
+<!-- Das hier ist einfach noch schlecht! Ist aber ein punkt für integrity and data prot-->
 
 This measure ties into the integrity of exam data. As access is restricted exam data cannot be changed. To provide even more security, answered questions can be sent to a central server instance as soon as students continue to the next question. Further, frequent database backups of the exam data should be standard procedure.
 
 Another consideration to take into account is the availability of the source code. Processes should be completely transparent and comprehensible. Exam authorities should be able to host exams <!-- exams? Software --> . This can be achieved by providing the exam software in open source format. Further open source programs can leverage crowd participation to render software bug-free and to eliminate existing security flaws.
 
+\newpage
+
 # Designing the software artefact
 
-After finding design principles and evaluating existing software by the means of these principles, i propose an implementation of a software artefact. I will talk about.
+In the previous chapter we found no exam software fully matching all requirements. In the following an overview of how a software artefact could implement all these design principle from a technical point of view will be made. Further, as a proof of concept two design principles are implemented in a working software prototype. This prototype helps determine software architecture as well as used technologies. First, general thoughts about data structure will be made, followed by an short introduction into used technologies. All these statements will be made with the exam requirements in mind.
+
+# Data structure and architecture
+
+The artefact is classic client-server application. With a frontend (client), responsible for interaction with both examinees and examiners and a backend (server), responsible for data handling. The client and server side communicate over a simple REST API. The advantage of a client-server application lays in the separation of the data and the end-user. Users do not have direct access to data but any read or write action must be made over and API. Here permissions can be checked and possible misuse inhibited. Second, as the user has no direct influence on the servers actions the sever can act as a source of truth. Data that was once committed to the server is now immutable. For example, the foraging of exam answers after submission becomes impossible. The API can also provide different kinds of endpoints to interact with for different kinds of users. Examiners for example can use one API endpoint to create exam questions, whereas students will get an error code if they try to interact with it.
+
+One of the most important design considerations is the data model that is used to store and access exam and user data. There are four central instances:
+First, there is the question instance. This is probably the most important instance. A question consists of a title, the question type, the question text, the questions points and the questions time limit. Further each question has a question body, the shape of the question-body depends on the question type. For example the multiple-choice question-body consists of a reference to the question it belongs to and a selection of possible answers. For free-text questions currently no additional body is need, still to be consistent in data structure and to allow for later additions, free-text questions also have a body.
+The second most important
+
+First, there is the user, representing either the examinee or the examiner. Users are uniquely identified by a id. This id is provided by the application but could also be an identifier provided by the testing authority. The second instance is
+
+Both the server and the client side are written in a code language called JavaScript. It is the most popular language on [@Github https://octoverse.github.com/#top-languages]. JavaScript allows programmers to realize the complete technology stack with one language, making it a compelling language to write an application in. Besides many modern and popular libraries for web development are written in JavaScript. Some of these libraries also find use in this artefact, the most crucial being [@React] and [@Express].
+
+[@React] is "a JavaScript library for building user interfaces". It uses structures that are devidable in reusable components. React makes it easy to create complex application instead of only simple websites. It was orignally created by [@Facebook] and finds it use in the tech-stacks of [@Uber], [@Airbnb], [@Netflix] and many more.
+
+[@Express] is a common library to create backend services with. It is lightweight and allows for the creation of both simple and complex APIs. The express server also handles data storage, for this purpose a database is connected. The artefact uses a noSQL database called [@MongoDB]. [@MongoDB] does not store data in tables but in JSON like documents. As the JSON format is inspired by JavaScripts objects, the data structure used in the frontend part of the application thus directly translates to the data structure that is used to store the given data.
+
+**General Validity:** Per question time constraints
+**Protection against contestation:** Offline Capable
+**Equal Treatment:** Digital answers and device indifference
+**Protection against cheating:** per question time constraints. video and sound surveillance. use of large question pools
+**Transparency.** a way to give feedback. availability.
+**Protection of Data. Integrity. Attributability.** User Permission Management. Authorship of Actions. Open source ness
 
 <!--
 # Software
