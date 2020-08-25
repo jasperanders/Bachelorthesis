@@ -25,9 +25,11 @@ Tags:
 
 # Introduction
 
-The examination process is a large part of education in general. Great amounts of time go into organizational problems and overhead. Although digitizing exams would . A step towards electronic examination would make the process more flexible, scalable and resource-efficient. Meanwhile, leading to a more accurate depiction of a students' competence.
+The examination process is a large part of education in general. Great amounts of time go into organizational problems and overhead. Although digitalization has found its way into many parts of education, assessment predominantly is not one of them. However, a step towards digital examination (e-exams) would make the process more flexible, scalable and resource-efficient. Meanwhile, leading to a more accurate depiction of a students' competence.
 
-Digitizing exams is no new idea. Although, many concepts [cite papers that talk about byod or multi media room exams] and implementations focus on conducting e-exams in the same environment as _paper-based exam_. Resulting in exams that are either conduced on the universities hardware [@KlausurenAndDerUniMainz]. Alternative the exam is a so called **BYOD** (bring your own device) exam, where the exam taken student owned devices [@GLM2015_RobertPeregoodoff].
+Digitizing exams is no new idea. Although, many concepts [cite papers that talk about byod or multi media room exams] and implementations focus on conducting e-exams in the same environment as _paper-based exam_. Resulting in exams that are either conduced on the universities hardware [@KlausurenAndDerUniMainz]. Alternative the exam is a so called _BYOD_ (bring your own device) exam, where the exam taken student owned devices [@GLM2015_RobertPeregoodoff]. The former is related to high investments into computer infrastructure for students to take the exams on. Thinking about the fact, that students in any way own an electronic device that would be suited to take an exam on, the _BYOD_ soulution becomes a sensible option.
+
+In general e-exams
 
 With the the current COVID-19 situation decentralizing exam would be of both economical and Technically the
 
@@ -175,7 +177,7 @@ Before thinking about how to obviate these cheating scenarios an important state
 
 **Cooperation with outsiders.** As decentralized e-exams are not conducted in a controlled environment, cooperation with outsiders becomes a severe problem. Examinees could try to take the exam in the presence of an expert. Some try to solve this problem by using proctored e-exams. These exams use live surveillance through webcam and microphone that is evaluated by a person watching in real time. This approach hardly scales as for every 4-5 students a supervising proctor is needed. Programs like [@ETC_Toefl] can make use of such a system, as their high test fees leave room for additional expenses.
 
-Although, live surveillance of students is not a valid option, the psychological effects of being monitored can be leveraged. A measure might be to make use of integrated webcams and microphones of the devices at hand. This video and sound data can be reviewed if needed. More importantly, it creates a mental barrier. If examinees really commit to engage in academic fraud they will most certainly find a way to do so. The goal is simply to prevent those from cheating that would only cheat if they would feel no threat of being caught. The sole existence of any measures makes students behave more honest. This can be compared to video surveillance that makes crime less common at public places [@Welsh2004]. 
+Although, live surveillance of students is not a valid option, the psychological effects of being monitored can be leveraged. A measure might be to make use of integrated webcams and microphones of the devices at hand. This video and sound data can be reviewed if needed. More importantly, it creates a mental barrier. If examinees really commit to engage in academic fraud they will most certainly find a way to do so. The goal is simply to prevent those from cheating that would only cheat if they would feel no threat of being caught. The sole existence of any measures makes students behave more honest. This can be compared to video surveillance that makes crime less common at public places [@Welsh2004].
 
 **Exploit environmental circumstances.** (e.g. Peeking at answers) Again randomization can solve this problem. As questions appear in a different order for each student, even multiple-choice questions cannot simply be copied.
 
@@ -183,13 +185,13 @@ Although, live surveillance of students is not a valid option, the psychological
 
 We find E-exam software to be able to enforce measures against cheating. Still, as specific software is in use, the degree of cheating must constantly be assessed. Further software bugs must be fixed, while security flaws must be identified and resolved.
 
-For the requirement of _protection against cheating_ we find three main design principles. First, the creation and management of large question pools must be possible. Second, it must be possible to enforce per question time constraints. Further, the question order must be randomizable. Lastly, a way to create the feeling of being surveilled must exist.  
+For the requirement of _protection against cheating_ we find three main design principles. First, the creation and management of large question pools must be possible. Second, it must be possible to enforce per question time constraints. Further, the question order must be randomizable. Lastly, a way to create the feeling of being surveilled must exist.
 
 ## Transparency
 
 The examination process should be transparent for examinees. Students must be able to understand their mistakes and shortcomings. This implies that the exam software provides ways to give feedback. Further, as examiners are not free of mistakes, corrections can sometimes be faulty. Well implemented transparency allows students to review the examiners correction and contest against individual corrections. Important to mention is, that every student should get the chance to review their exam. The digital nature of e-exams makes this degree of transparency easy to realize. Sharing a corrected digital copy of an exam, allows examinees review their answers and understand their gaps in knowledge. Contestation against certain questions could also be processed within the exam software.
 
-For the requirement of _transparency_ we thus find two main design principles. First, the examiner must be able to give feedback to question. Second, this feedback must be available by the student. 
+For the requirement of _transparency_ we thus find two main design principles. First, the examiner must be able to give feedback to question. Second, this feedback must be available by the student.
 
 ## Attributability, Protection of Data and Integrity
 
