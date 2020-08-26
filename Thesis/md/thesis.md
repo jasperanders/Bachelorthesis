@@ -50,8 +50,8 @@ This thesis thus focuses on decentralized e-exams that renounce the usage of a p
 3. **Design Evaluation:** The effectiveness of the artifact is based on the effectiveness of design principles that are derived form research and intuition.
 4. **Research Contribution:** There are few systems designed for providing high academic validity (i.d. prevent cheating in exams). Many systems that do exist, make use of _Proctoring_ (the student is continuously watched over video stream) environments which are expensive and still easily can be fooled. This research artifact aims to minimize academic dishonesty through design decisions.
 5. **Research Rigor:** This thesis builds upon research in the fields of education. Taking into consideration what other Universities have already incorporated into their examination process and what empirical studies have shown to be valuable and efficient.
-6. **Design as a Search Process:**
-7. **Research Communication:** This thesis focuses on illustrating design considerations, that were made in order to develop an artifact, that most closely fit the needs of educators. Therefore, this thesis is of interest to those want to build upon the considerations that were proposed. The actual technical intricacies will only briefly be touched upon, to give some insight into the technical base of the given artifact.
+6. **Design as a Search Process:** Digital exams are no new concept, still it is not widely adopted. This thesis build upon the works of different software artifacts and research made in the field of education.
+7. **Research Communication:** This thesis focuses on illustrating design considerations, that were made in order to develop an artifact, that most closely fit the needs of sound assessment. Therefore, this thesis focuses more on the concept and design principles that are needed to achieve a suited examination system. However as we developed a prototype for conducting exams, we will also talk about the technical implementation of some of the design principles.
 
 \newpage
 
@@ -311,6 +311,8 @@ Further the the video and sound surveillance is not an implemented feature jet. 
 A design principle mentioned is the usage of large question pools. In theory is there a way of creating such a question pool in the current software artefact, still there are some limitations. To really generate large question pools, the power of large groups must be utilitized. Universities have created questions for numerous years but as questions leak or get published, these questions remain worthless for a single institution. Sharing them on the other hand opens questions up to new uses. To really enable the common sharing of questions two things must be achieved. First a common question format must be found. As question layout and design should be handled by the application the question is used in this standard should only contain data and no markup. The data structure of the question type of this artefact could theoretically serve such a purpose. Still, the data structure must firmly be evaluated and surely extended. Second a platform is needed to share questions. Such a platform should also take care some kind of quality assurance. At the time of this writing such a platform does simply not exist.
 
 Lastly a note about usability and complexity of the artefact must be made. As this artefact serves as a minimal viable product, many of the user interactions are not suited for large amounts of data. Regarding the further development of the app usability and performance must continuously be evaluated and incrementally improved.
+
+# Conclusion
 
 <!--
 
