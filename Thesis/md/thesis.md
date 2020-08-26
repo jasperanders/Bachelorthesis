@@ -265,6 +265,8 @@ As already mentioned above most of the systems currently in use are LMS. As we h
 
 To conclude, non of the mentioned systems provide a examination system that meets all proposed requirements. The advantages e-exams provide in comparison to paper based exams make the development of a such an application compelling. As the Covid19 crisis has put even more pressure on the examination process the need for an artefact that meets all requirements has become even more urgent.
 
+As a matter of fairness it must be mentioned that all these tools are not advertised to be used in an decentralized e-exam context. The assessment tools that are integrated into the LMS are especially aimed at self assessment. The LPlus Software is primarily used in a central e-exam context, where examinees have control over student interaction an often even over the hardware. However, as the discussed tools are used by numerous institutions, they will likely also use to conduct e-assessments.
+
 \newpage
 
 # Designing the software artefact
@@ -312,7 +314,19 @@ A design principle mentioned is the usage of large question pools. In theory is 
 
 Lastly a note about usability and complexity of the artefact must be made. As this artefact serves as a minimal viable product, many of the user interactions are not suited for large amounts of data. Regarding the further development of the app usability and performance must continuously be evaluated and incrementally improved.
 
+\newpage
+
 # Conclusion
+
+At the start of this thesis we argued that the advantages of e-exams can only be leveraged if all requirements for a sound assessment tool are met. We gave intuition on which design principles allow us to create such e-exams. As a major aspect of e-exams we put forth the idea of partial open book exams, making use of per question time constraints. Besides we stressed the importance of offline capabilities as a way of protecting against contestation and assessed how e-exams can prevent academic fraud.
+
+Further we evaluated these design principles on a multitude of software products. None of these products achieved to meet all of the requirements. Some of the major shortcomings were lack of the above mentioned time restrictions, missing offline capabilities and no way of contiguously checking a students identity.
+
+The lack of a suitable examination tool has motivated the development process of a software artefact that implements all of the discussed design principles. This thesis provides a prototype of that software artefact. It enforces time restrictions and has offline capabilities, in that way addressing the main shortcomings of the other, market ready software solutions.
+
+As an outlook, the development of a e-examination tool is only part of the whole assessment process. The creation of the actual questions is a second important and time consuming aspect.As already mentioned above e-exams rely on large question pools. At the moment no feasible way of sharing questions on a large scale exists. Such an sharing infrastructure--whether integrated into the exam tool or standalone--could largely improve this assessment process. Adding such a platform could also improve the quality of questions as questions emerge as a collaborative effort.
+
+To conclude, this thesis has proposed design principles that can be used to create a valid e-examination software. Further it provides a software artefact that embeds some of the most important design principles. Although this prototype is by no means market ready it provides a starting point for a software that allows for truly decentralized e-exams.
 
 <!--
 
