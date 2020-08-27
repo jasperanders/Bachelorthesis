@@ -1,3 +1,3 @@
 # Bachelorthesis
 
-the Repo containing my Bachelorsthesis
+The Repo containing my Bachelorsthesis.
