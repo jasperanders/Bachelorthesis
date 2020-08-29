@@ -1,15 +1,15 @@
                                                               & Ilias & Moodle & OpenOlat & Blackboard & LPlus \\ \hline
-Multiple questions types                                      &  X    &   X    &    X     &     X      &   X   \\ \hline                 
-Device agnostic                                               &  X    &   X    &    X     &     X      &    X  \\ \hline       
-Exams must leverage automation wherever possible              &  X    &   X    &    X     &     X      &   X   \\ \hline                                         
-Creation and management of large question pools               &   X   &   X    &    X     &     X      &   X   \\ \hline                                       
-User rights management                                        & X     &  X     &  X       &      X     &   X   \\ \hline               
-User action logging                                           & X     &  X     &  X       &      X     &   X   \\ \hline           
-Codebase is open source                                       & X     &  X     &  X       &            &       \\ \hline               
-Feedback must be able to be able to be reviewed by students   &       & X      &     X    &            &  X    \\ \hline                                                   
-Randomization of question order                               &       &    X   &     X    &            &   X   \\ \hline                       
-Examiners must be able to give feedback to answers            &       &  X     &  X       &            &  X    \\ \hline                                           
-Per question time constraints                                 &       &        &    X     &            &  X    \\ \hline                     
+Multiple questions types                                      &  \checkmark    &   \checkmark    &    \checkmark     &     \checkmark      &   \checkmark   \\ \hline                 
+Device agnostic                                               &  \checkmark    &   \checkmark    &    \checkmark     &     \checkmark      &    \checkmark  \\ \hline       
+Exams must leverage automation wherever possible              &  \checkmark    &   \checkmark    &    \checkmark     &     \checkmark      &   \checkmark   \\ \hline                                         
+Creation and management of large question pools               &   \checkmark   &   \checkmark    &    \checkmark     &     \checkmark      &   \checkmark   \\ \hline                                       
+User rights management                                        & \checkmark     &  \checkmark     &  \checkmark       &      \checkmark     &   \checkmark   \\ \hline               
+User action logging                                           & \checkmark     &  \checkmark     &  \checkmark       &      \checkmark     &   \checkmark   \\ \hline           
+Codebase is open source                                       & \checkmark     &  \checkmark     &  \checkmark       &            &       \\ \hline               
+Feedback must be able to be able to be reviewed by students   &       & \checkmark      &     \checkmark    &            &  \checkmark    \\ \hline                                                   
+Randomization of question order                               &       &    \checkmark   &     \checkmark    &            &   \checkmark   \\ \hline                       
+Examiners must be able to give feedback to answers            &       &  \checkmark     &  \checkmark       &            &  \checkmark    \\ \hline                                           
+Per question time constraints                                 &       &        &    \checkmark     &            &  \checkmark    \\ \hline                     
 Offline Capabilities                                          &       &        &          &            &       \\ \hline             
 Advising student to assure a save exam environment            &       &        &          &            &       \\ \hline                                           
 Providing a feeling of surveillance must exist                &       &        &          &            &       \\ \hline                                       
