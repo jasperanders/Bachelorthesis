@@ -1,0 +1,32 @@
+General Validity
+
+& \textbullet Per question time constraints \\
+& \textbullet Multiple questions types \\ \hline
+
+Protection against contestation
+
+& \textbullet Offline Capabilities \\ 
+& \textbullet Advising student to assure a save exam environment \\ \hline
+
+Equal Treatment
+
+& \textbullet Device agnostic \\
+& \textbullet Exams must leverage automation wherever possible \\ \hline
+
+Protection Against Cheating
+
+& \textbullet Creation and management of large question pools \\
+& \textbullet Per question time constraints \\
+& \textbullet Randomization of question order \\
+& \textbullet Providing a feeling of surveillance must exist \\ \hline
+
+Transparency
+
+& \textbullet Examinees must be able to give feedback to answers \\
+& \textbullet Feedback must be able to be able to be reviewed by students \\ \hline
+
+Protection of Data, Attributability and Integrity
+
+& \textbullet User rights management \\
+& \textbullet User action logging \\
+& \textbullet Codebase is open source \\ \hline
