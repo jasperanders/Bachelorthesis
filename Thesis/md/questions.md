@@ -26,6 +26,7 @@ Question pools are one of the main pillars on which the examination process reli
 - Any means to keep question pools secret must be enforced.
   -x Large question pools are a measure against a certain aspect of cheating.
 - Sharing of questions between examination instances in large quantity is already done today.
+- Question pools can leverage collaborative working to create large ones, quicker.
 
 40s
 
