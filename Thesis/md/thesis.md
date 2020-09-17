@@ -75,20 +75,20 @@ We find e-exams to be advantageous in a variety of ways. Still, it must be ensur
 
 The first requirement defines the desired outcome of an exam:
 
-- **General Validity.** Exams should aim to provide an accurate depiction of an examinees' competence level.
+1. **General Validity.** Exams should aim to provide an accurate depiction of an examinees' competence level.
 
 Further, we find requirements that mainly influence interactions of examinees and examiners with the examination system:
 
-- **Protection against contestation.** No formal or technical deficiencies should occur that question the validity of the exam.
-- **Equal treatment.** Individual examinees must be treated equally.
-- **Protection against cheating.** The exam's outcome must be protected against manipulation by examinees.
-- **Transparency.** The examination process and results must be understandable and verifiable.
+2. **Protection against contestation.** No formal or technical deficiencies should occur that question the validity of the exam.
+3. **Equal treatment.** Individual examinees must be treated equally.
+4. **Protection against cheating.** The exam's outcome must be protected against manipulation by examinees.
+5. **Transparency.** The examination process and results must be understandable and verifiable.
 
 Lastly, we determine requirements that mainly influence the technical implementation of how the examination system handles data:
 
-- **Protection of data.** The data of examinees is personal. As such it must be protected from misuse.
-- **Integrity.** Exam data must maintain consistency, accuracy and trustworthiness throughout its entire lifetime.
-- **Attributability.** A taken exam must uniquely map to a single examinee and vice versa.
+6. **Protection of data.** The data of examinees is personal. As such it must be protected from misuse.
+7. **Integrity.** Exam data must maintain consistency, accuracy and trustworthiness throughout its entire lifetime.
+8. **Attributability.** A taken exam must uniquely map to a single examinee and vice versa.
 
 These categories set a general framework of how to design any examination system. Figure _1_ shows the design principles needed in order to match the requirements mentioned above. In the following, we will discuss these design principles.
 
@@ -99,34 +99,34 @@ These categories set a general framework of how to design any examination system
 \hline
 Requirement & Design Principle \\ \hline
 
-\multirow{2}{6cm}{General Validity}
+\multirow{2}{6cm}{1. General Validity}
 
 & \textbullet Per question time constraints \\
 & \textbullet Multiple question types \\ \hline
 
-\multirow{2}{6cm}{Protection against contestation}
+\multirow{2}{6cm}{2. Protection against contestation}
 
 & \textbullet Offline capabilities \\
-& \textbullet Students should be advised to assure a reliable exam environment \\ \hline
+& \textbullet Students should be advised to ensure a reliable exam environment \\ \hline
 
-\multirow{2}{6cm}{Equal Treatment}
+\multirow{2}{6cm}{3. Equal Treatment}
 
 & \textbullet Device agnostic \\
 & \textbullet Exams must leverage automation wherever possible \\ \hline
 
-\multirow{4}{6cm}{Protection Against Cheating}
+\multirow{4}{6cm}{4. Protection Against Cheating}
 
 & \textbullet Creation and management of large question pools \\
 & \textbullet Per question time constraints \\
 & \textbullet Randomization of question order \\
 & \textbullet Providing a sense of surveillance \\ \hline
 
-\multirow{2}{6cm}{Transparency}
+\multirow{2}{6cm}{5. Transparency}
 
 & \textbullet Examiners must be able to give feedback to answers \\
 & \textbullet Feedback must be reviewable by students \\ \hline
 
-\multirow{3}{6cm}{Protection of Data, Attributability and Integrity}
+\multirow{3}{6cm}{6. Protection of Data, 7. Integrity and 8. Attributability }
 
 & \textbullet User rights management \\
 & \textbullet User action logging \\
@@ -151,7 +151,7 @@ Classic paper-based exams do not provide a feasible way of combining degrees of 
 
 Ultimately, examination software does not directly impact on what exact questions the examiner asks. The content of a question predefines how well this question can predict an examinee's capabilities. Still, the use of a partial open-book mode allows for a diverse set of questions. This mode allows to test factual, transfer and practical knowledge to an equally valid degree.
 
-For the requirement of _general validity_, we thus find two main design principles. The first principle is the usage of multiple question types. The second is the enforcement of per question time constraints.
+For the requirement _2.1._, we thus find two main design principles. The first principle is the usage of multiple question types. The second is the enforcement of per question time constraints.
 
 ## Protection Against Contestation
 
@@ -167,11 +167,11 @@ Contestation of entire paper-based exams is not a common problem. This is a resu
 
 The reliability of the exam medium is most dependent on the e-exam software. As with any software, high reliability can only be achieved through rigorous testing and continuous improvements.
 
-Another important point is device the operability. Decentralized e-exams are taken on the examinee's device. It thus largely lies within the responsibility of the device owner to assure that it is working as intended. It must be mentioned that modern devices generally show low failure rates. As students in any way need a reliable device to participate in their studies, device operability is not a major problem. Still, the examination tool can prevent unnecessary device failure by strongly advising examinees to keep their devices updated, plugged into power and to not use unreliable devices.
+Another important point is device the operability. Decentralized e-exams are taken on the examinee's device. It thus largely lies within the responsibility of the device owner to ensure that it is working as intended. It must be mentioned that modern devices generally show low failure rates. As students in any way need a reliable device to participate in their studies, device operability is not a major problem. Still, the examination tool can prevent unnecessary device failure by strongly advising examinees to keep their devices updated, plugged into power and to not use unreliable devices.
 
 The last major point in which the exam medium can fail, is connection loss that leads to time deficiencies for students. In normal operation, exam answers should continuously be sent to a server to minimize the risk of data loss. In case of connection issues, students must be able to continue their exams without problems. Data must then later be sent to the server. In case of both a device crash and internet failure, the exam should persist on the local storage of the device. The device can then be rebooted, and the exam can be continued.
 
-For the requirement of _protection against contestation_, we thus find three main design principles. The first principle is the continuous improvement and sound testing of exam software. The second is advising examinees to assure their device is working as intended. The last is taking connection issues into account and being able to handle them.
+For the requirement _2.2._, we thus find three main design principles. The first principle is the continuous improvement and sound testing of exam software. The second is advising examinees to ensure their device is working as intended. The last is taking connection issues into account and being able to handle them.
 
 ## Equal Treatment
 
@@ -192,7 +192,7 @@ The process of correcting exams is another an area where possible inequalities c
 By using e-exams, these inequalities can be eliminated. First, some question types, such as multiple-choice questions can be checked automatically,
 leading to an immediate improvement over correcting these questions by hand. This leads to a lower correction load and thus to fewer correction mistakes. Second, as exam answers are available in digital text, reading and checking answers is easier. Answers must not be deciphered; correction of exams can be done faster. Meanwhile, e-exams can also eliminate biases against certain students connected to their handwriting.
 
-For the requirement of _equal treatment_, we thus find two main design principles. First, the software should be device agnostic. Second, the system must leverage automation possibilities.
+For the requirement _2.3._, we thus find two main design principles. First, the software should be device agnostic. Second, the system must leverage automation possibilities.
 
 <!--
 Adding, the digital nature of exams makes it possible to give visual aid to the corrector. Automatically highlighting specific terminology can help correctors to faster check students answers.
@@ -246,13 +246,13 @@ Although live surveillance of students is not a valid option, the psychological 
 
 We find e-exam software to be able to enforce measures against cheating. Still, as specific software is in use, the degree of cheating must constantly be assessed. Further software bugs must be fixed, while security flaws must be identified and resolved.
 
-For the requirement of _protection against cheating_, we find four main design principles. First, the creation and management of large question pools must be possible. Second, per question time constraints should be enforceable. Further, the question order must be randomizable. Lastly, a way to create the feeling of being surveilled should exist.
+For the requirement _2.4._, we find four main design principles. First, the creation and management of large question pools must be possible. Second, per question time constraints should be enforceable. Further, the question order must be randomizable. Lastly, a way to create the feeling of being surveilled should exist.
 
 ## Transparency
 
 The examination process should be transparent for examinees. Students must be able to understand their mistakes and shortcomings. This implies that the exam software provides ways to give feedback. Further, as examiners are not free of mistakes, corrections can sometimes be faulty. Well implemented transparency allows students to review the examiner's correction and contest against individual corrections. Important to mention is that every student should get the chance to review their exam. The digital nature of e-exams makes this degree of transparency easy to realize. Sharing a corrected digital copy of an exam, allows examinees to review their answers and understand their knowledgen gaps. Contestation against specific corrections could also be processed within the exam software.
 
-For the requirement of _transparency_, we thus find two main design principles. First, the examiner must be able to give feedback to answers. Second, this feedback must be made available to the student.
+For the requirement _2.5_, we thus find two main design principles. First, the examiner must be able to give feedback to answers. Second, this feedback must be made available to the student.
 
 ## Attributability, Protection of Data and Integrity
 
@@ -260,7 +260,7 @@ Exam data is highly sensitive and demands high levels of information security. A
 
 Exam data must be uniquely traceable to examinees. This can be realized by having examinees log into a user account before they can perform any action. Examinees either get a unique identifier in-software or a unique identifier that is provided by the testing authority. Any of their actions is then linked to their user id.
 
-To assure solid data protection, strong user rights management must be enacted. This guarantees that only authorized groups can view or correct exams. In this way, data is largely protected from misuse.
+To ensure solid data protection, strong user rights management must be enacted. This guarantees that only authorized groups can view or correct exams. In this way, data is largely protected from misuse.
 
 <!-- Das hier ist einfach noch schlecht! Ist aber ein punkt für integrity and data prot-->
 
@@ -268,7 +268,7 @@ This measure ties into the integrity of exam data. As access is restricted, exam
 
 Another consideration to take into account is the availability of the source code. Processes should be completely transparent and comprehensible. Exam authorities should be able to host exams themselves. This can be achieved by providing the exam software in open source format. Adding, an open source format can leverage crowd participation to render software more bug-free and eliminate existing security flaws.
 
-For the requirement of _attributability, protection of data, and integrity_, we thus find three main design principles. First, sound user rights management must be enforced. Second, user actions must be traceable. Third, source code should be well maintained and open source.
+For the requirements _2.6_ through _2.8_, we thus find three main design principles. First, sound user rights management must be enforced. Second, user actions must be traceable. Third, source code should be well maintained and open source.
 
 In the previous section we have developed design principles. These principles allow as to create a valid examination solution. Further, it allows us to evaluate existing solutions and also create a software artifact ourselves.
 
@@ -286,11 +286,11 @@ As mentioned, in this thesis we will evaluate five popular software alternatives
 
 These five systems consist of popular e-learning applications used by large parts of German higher education. _Illias_, _Moodle_, and _Open Olat_ are open source and free to use. Both _Blackboard_ and _LPlus_ are closed source and are paid products. Besides _LPlus_, all of the products are learning management systems (LMS). A learning management system provides management of the complete e-learning process in a single application. LMS allow for the distribution of teaching material, exchange between students, and provide a platform for educators to get in touch with their students. The systems discussed here also incorporate e-assessment features. German universities often have such LMS in operation. Using the integrated assessment tools becomes a seamless experience for these institutions. While this appeals in theory, the integrated assessment capabilities still need to be evaluated. We will measure the quality of all five tools based on their degree of fulfillment of the requirements and design principles we laid out in section _2_.
 
-As a baseline, all these tools are market-ready products. All of them have user management with respective permissions, and are actively maintained, laying a foundation for the _protection of data, attributability and integrity_. Further, all of them rely on a browser to provide their services, thus being device agnostic. They also leverage automation where it is possible. Thus, they match _the equal treatment requirement_.
+As a baseline, all these tools are market-ready products. All of them have user management with respective permissions, and are actively maintained, laying a foundation for the _protection of data, attributability and integrity_. Further, all of them rely on a browser to provide their services, thus being device agnostic. They also leverage automation where it is possible. Thus, they match _requirement 2.3_.
 
 ## General validity
 
-All products allow a variety of question types, thus partly matching the first design principle. To completely fulfil the _general validity requirement_, exams need to enforce per question time constraints. Here only _Open Olat_, and _LPlus_ can provide such a feature. The other systems allow for time constraints to be set on the whole exam; time limits on a per question basis are not possible.
+All products allow a variety of question types, thus partly matching the first design principle. To completely fulfil the _requirement 2.1._, exams need to enforce per question time constraints. Here only _Open Olat_, and _LPlus_ can provide such a feature. The other systems allow for time constraints to be set on the whole exam; time limits on a per question basis are not possible.
 
 ## Protection against contestation
 
@@ -342,7 +342,7 @@ Randomization of question order & & \checkmark & \checkmark & & \checkmark \\ \h
 Examiners must be able to give feedback to answers & & \checkmark & \checkmark & & \checkmark \\ \hline  
 Per question time constraints & & & \checkmark & & \checkmark \\ \hline  
 Offline capabilities & & & & & \\ \hline  
-Advising student to assure a save exam environment & & & & & \\ \hline  
+Advising student to ensure a save exam environment & & & & & \\ \hline  
 Providing a sense of surveillance & & & & & \\ \hline
 
 \end{tabular}
@@ -358,31 +358,30 @@ To conclude, none of the mentioned systems meet all the proposed requirements. T
 
 # Designing an Examination Software Artifact
 
-In the following, we will discuss how a software artifact can implement these design principles from a technical point of view. Further, as a proof of concept, two design principles are implemented in a software prototype. This prototype helps determine software architecture as well as used technologies for effective e-examination. The first part outlines the data structure of the artefact, followed by a brief introduction into the technologies employed. All these statements will be made with the exam requirements introduced in _section 2_ in mind.
+In the following, we will discuss how a software artifact can implement these design principles from a technical point of view. Further, as a proof of concept, two design principles are implemented in a software prototype. This prototype helps determine software architecture as well as used technologies for effective e-examination. The first part outlines the data structure of the artefact, followed by a brief introduction into the technologies employed. All these statements will be made with the exam requirements introduced in section _2._ in mind.
 
-As mentioned earlier, open source code can allow for more secure and transparent software. Consequentially, the source code of this artifacts front- [@XM-front-end] and back-end [@XM-back-end] is available on Github under the MIT open code license.
+As mentioned earlier, open source code can allow for more secure and transparent software. Consequentially, the source code of this artifacts front- [@XM-Frontend] and back-end [@XM-Backend] is available on Github under the MIT open code license.
 
 ## Data Structure and Architecture
 
-The artifact is a client-server application. The front-end (client) is responsible for the interaction with both examinees and examiners and a back-end (server) for data handling. The back-end server runs on a Node.js [@Node] server, while the front-end is delivered via any modern browser, thus fulfilling the _equal treatment requirement_.
+The artifact is a client-server application. The front-end (client) is responsible for the interaction with both examinees and examiners and a back-end (server) for data handling. The back-end server runs on a Node.js [@Node] server, while the front-end is delivered via any modern browser, thus fulfilling the requirement _2.3_.
 
 The client and server-side communicate over a simple REST API. The advantage of a client-server application lies in the separation of the data and the end-user. Users do not have direct access to data but any read- or write-action must be executed over an API. Here permissions can be checked and possible misuse inhibited. Additionally, as the user has no direct influence on the server's actions, the latter can act as a source of truth. Once committed data is now immutable. For example, the foraging of exam answers after submission becomes impossible. The API can also provide different kinds of endpoints for interaction with different users. Examiners, for example, can use one API endpoint to create exam questions, whereas students will get an error code if they try to interact with the endpoint.
 
 ![Data model of the prototype](../figures/dataModel.svg "Data model of the prototype")
 
-One of the most important design considerations is the data model that is used to store and access exam and user data. <!-- Todo: Maybe look here again. --> There are four central instances: <!-- Todo: Write something about figure 1 -->
+One of the most important design considerations is the data model that is used to store and access exam and user data. As is shown in figure 1, there are four central instances:
 The most critical data instance is the _question_. Especially with the creation of question-pools in mind, it is clear that these _question instances_ must live independently of any exam. A question consists of a title, the question type, the question text, the question's points, and the question's time limit. Further, each question has a question body. The shape of the question-body depends on the question type. For example, the multiple-choice question-body consists of a reference to the question it belongs to, and a selection of possible answers. For free-text questions, no body is needed. Still, to be consistent in the data structure, and to allow for later additions, free-text questions also have a body.
 
 These questions can then be assembled into the second central instance, the exam. Each exam contains an exam name, the users that are allowed to take part in a given exam, and an exam date. Most importantly, an exam contains a list of question ids, which constitute the exam content.
 
-The third central instance is the user. Users can either be examinees or students with each having different permissions. Students, in contrast to examiners, can not create exams or questions. If any new data instance is created, e.g. a new question, the _author_ property is set to user performing the request. Further, users possess an email, a password, a name, and a unique identifier property. The id is provided by the application but could also be an identifier given by the testing authority. With user handling and automatic assignment of authorship, we can assure the _attributability requirement_ and, to a large degree the _protection of data_ and the _integrity requirements_.
+The third central instance is the user. Users can either be examinees or students with each having different permissions. Students, in contrast to examiners, can not create exams or questions. If any new data instance is created, e.g. a new question, the _author_ property is set to user performing the request. Further, users possess an email, a password, a name, and a unique identifier property. The id is provided by the application but could also be an identifier given by the testing authority. With user handling and automatic assignment of authorship, we can ensure _2.8_ and, to a large degree _2.6_ and _2.7_.
 
 The last key instance is the answer. For each question, an examinee answers an _answer instance_ is created. This instance contains a timestamp at which the question is started, a timestamp at which the question was answered, and the question-id the answer is referring to. Additionally, the answer object provides a flag that marks it as a master answer. Master answers are the correct answers, or in the case of free-text questions, provide a guideline of what is to be considered correct. These master answers can only be created by examiners. Analog to the question, the answer also bears an answer-body. The form of this body again depends on the question type. _Multiple-choice answer-bodies_ contain the selected answers, whereas _free-text answer-bodies_ contain the given free-text answer. Additionally, any answer body contains a reference to the answer and to the respective question using its id.
 
-The above provides an overview of the data structure, as it is found in the database. As this app inhibits offline capabilities, large portions of this data structure can again be found in the front-end application. Of course, the data is reduced to the data that a user, e.g a student, is allowed to see. Still, the structure of questions and answers remain identical. To realize the mentioned offline capabilities, the exam data persists in the local storage of the browser. Data remains in this local storage until deleted by the app or intentionally removed by the user. If there is an internet connection the data on the server and the data in the local storage remain the same. Should the internet connection fail, the exam continues as normal. Answers are then saved to the local storage and at a later point in time, send to the server. Depending on the circumstances students are taking their exams under, examiners can adjust the degree of offline capabilities. Students could be allowed to take their complete exam in offline mode. At the end of the exam are they required to submit their answers. With the handling of offline capabilities, we can assure the _protection against contestation requirement_.
+The above provides an overview of the data structure, as it is found in the database. As this app inhibits offline capabilities, large portions of this data structure can again be found in the front-end application. Of course, the data is reduced to the data that a user, e.g a student, is allowed to see. Still, the structure of questions and answers remain identical. To realize the mentioned offline capabilities, the exam data persists in the local storage of the browser. Data remains in this local storage until deleted by the app or intentionally removed by the user. If there is an internet connection the data on the server and the data in the local storage remain the same. Should the internet connection fail, the exam continues as normal. Answers are then saved to the local storage and at a later point in time, send to the server. Depending on the circumstances students are taking their exams under, examiners can adjust the degree of offline capabilities. Students could be allowed to take their complete exam in offline mode. At the end of the exam are they required to submit their answers. With the handling of offline capabilities, we can ensure the _requirement 2_.
 
-To provide a way to meet the requirement of _general validity_ and to fulfill parts of the design principles to assure <!-- Todo: Assure Ensure -->
-_protection against cheating_, the front-end application must enforce per question time constraints. The back-end can review the actual time used to give an answer. Still, the user interface must assist the student in taking only as much time as allowed. The artifact achieves this by showing the remaining time and submitting the currently provided answer as soon as time is up. This answer is then sent to the server. Students are thus forced to comply with the respective time constraints, leaving them no room to accidentally miss allowed times.
+To provide a way to meet the requirement 1. and to fulfill parts of the design principles to ensure _2.4._, the front-end application must enforce per question time constraints. The back-end can review the actual time used to give an answer. Still, the user interface must assist the student in taking only as much time as allowed. The artifact achieves this by showing the remaining time and submitting the currently provided answer as soon as time is up. This answer is then sent to the server. Students are thus forced to comply with the respective time constraints, leaving them no room to accidentally miss allowed times.
 
 ## Tech Stack <!-- Umgangsprache?? -->
 
@@ -394,11 +393,11 @@ Express is a common library for the creation of back-end services. It is lightwe
 
 ## Future Implementations
 
-As the artifact is only a proof of concept and no market-ready software, it lacks some key features. Exams, for example, can be conducted, but there is no way of evaluating them through a user interface. As the correction of exams is not implemented yet, the _transparency requirement_ remains unmatched.
+As the artifact is only a proof of concept and no market-ready software, it lacks some key features. Exams, for example, can be conducted, but there is no way of evaluating them through a user interface. As the correction of exams is not implemented yet, the _2.5_ remains unmatched.
 
 Further, the video and sound surveillance are not implemented yet. Thus, Protection against cheating remains also partially unmatched. As can be seen above, the video supervision only addresses the aspect of cheating by the use of outside help. Looking at table 1, this supervision of students is the only measure against cheating that is not enforced.
 
-We have looked at large question pools in section 2. In theory, in the current software artifact, there is a way of creating such question pools. However, there are some limitations: For the creation of large question pools, crowd collaboration can be used. Universities have created questions for numerous years. As these questions leak or get published, these become worthless for a single institution. Sharing them, opens questions up to new uses. To enable the common sharing of questions two things must be achieved. First. a common question format must be found. The data structure of the question-type of this artifact could theoretically serve such a purpose. Second, a platform is needed to share questions. Such a platform should also take care of some kind of quality assurance. At the time of writing, such a platform does not exist.
+We have looked at large question pools in section _2._ In theory, in the current software artifact, there is a way of creating such question pools. However, there are some limitations: For the creation of large question pools, crowd collaboration can be used. Universities have created questions for numerous years. As these questions leak or get published, these become worthless for a single institution. Sharing them, opens questions up to new uses. To enable the common sharing of questions two things must be achieved. First. a common question format must be found. The data structure of the question-type of this artifact could theoretically serve such a purpose. Second, a platform is needed to share questions. Such a platform should also take care of some kind of quality assurance. At the time of writing, such a platform does not exist.
 
 Lastly, this artifact serves as a minimal viable product, many of the user interactions are not suited for large amounts of data. Regarding the further development of the app, usability and performance must continuously be evaluated and improved.
 
@@ -406,7 +405,7 @@ Lastly, this artifact serves as a minimal viable product, many of the user inter
 
 # Conclusion
 
-First, this thesis argued that the advantages of e-exams can only be leveraged, if all requirements for a sound assessment tool are met. We gave intuition, which design principles allow us to create such an e-exam. As a major aspect of e-exams we put forth the idea of partial open-book exams, making use of per question time constraints. Besides, we stressed the importance of offline capabilities as a way of protection against contestation and assessed how e-exams can act against cheating. <!-- Per question time ToDo: -->
+First, this thesis argued that the advantages of e-exams can only be leveraged, if all requirements for a sound assessment tool are met. We gave intuition, which design principles allow us to create such an e-exam. As a major aspect of e-exams we put forth the idea of partial open-book exams, making use of per question time constraints. Besides, we stressed the importance of offline capabilities as a way of protection against contestation and assessed how e-exams can enforce time constraints to counteract cheating.
 
 Further, we evaluated these design principles on a multitude of software products. None of these products achieved to meet all the requirements. Some of the major shortcomings included the lack of the above-mentioned time restrictions, missing offline capabilities and the missing of continuos identity evaluation. The lack of a suitable examination tool has motivated the development process of a software artifact that implements all the discussed design principles. This thesis provides a prototype of such a software artifact. It enforces time restrictions and has offline capabilities, in that way addressing the main shortcomings of the other, market ready software solutions.
 
@@ -540,15 +539,6 @@ Here e-exams show their capabilies in network effects. As more examiners and uni
 
 <!-- ### Partial open-book Exams -->
 
-<!--
-TODO:
-- Bullemie lernen
-
-Moving beyond time and efficiancy improvements.
-- Fair depiction of skill
-- introduction into open-book exams
--->
-
 <!-- **Requirements:**
 
 - Exams must allow for singe question time restrictions.
@@ -643,7 +633,6 @@ With regard to the configuration and usage of an e-exam tool, it is clear that a
 
 Politics and angst also play into the above problems. As new technologie and software often creates a sense of being overwhelmed there must be a strone emphasis on showing examiners the advantages an e-examination system could give them. E-exams especially show their potential when being widely adopted. As more usage of e-exams can lead to network effects. Especially inside an institution there must be enforcement of the usage of new systems. The faster a new way of working gets adapedt the faster it can improve. In this way also small exams are very valuable. It is even thinkable to get immediate feedback of the examinees to improve the system or to get a students feelings about the exam. As the examination infrastructure is easily scalable, there is not need for smaller exam groups to move back to paper. Questions and questionpools can be created in the same way as for bigger exams and as a new e-exam does not need more resources there is no need to hold back.
 
-======================================= <!-- TODO: Bis hier!!
 
 ## Bonus
 
