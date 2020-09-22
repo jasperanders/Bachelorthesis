@@ -10,7 +10,6 @@ margin-right: 2cm
 margin-top: 3.4cm
 margin-bottom: 3.5cm
 paper-size: a4
-
 # toc: true
 number-sections: true
 
@@ -37,6 +36,15 @@ Tags:
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
 
 \begin{abstract}Examination is one of the few parts of education which has not profited from digitalization. However, electronic examination can make the assessment process faster and more valid. Especially, with respect to the current pandemic, e-exams are not only an opportunity for improvement but have become necessary. To ensure sound e-assessments, an examination system must meet certain requirements. We develop these requirements and give insight into the design principles that help us match them. These design principles are used to evaluate popular e-examination tools. We find none of them fully meeting the proposed requirements. Especially, in areas of cheating prevention and protection against contestation these tools fall short. With the aim of constructing a better solution, we propose an examination tool prototype. In order address the shortcomings of the other tools, this prototype provides offline capabilities and per question time constraints. It thus lays a foundation for modernizing exams.\end{abstract}
+\newpage
+\listoftables
+\listoffigures
+\newpage
+\section*{List of Abbreviations}
+
+**LMS**: Learn Management System  
+**BYOD**: Bring Your Own Device
+
 \newpage
 \tableofcontents
 
@@ -134,7 +142,7 @@ Requirement & Design Principle \\ \hline
 & \textbullet Codebase is open source \\ \hline
 
 \end{tabular}
-\caption{\label{tab:Requirements_with_matching_design_principles}Requirements and their respective design principles}
+\caption{\label{tab:Requirements_with_matching_design_principles}Requirements and their Respective Design Principles}
 \end{table}
 \end{center}
 
@@ -354,7 +362,7 @@ Advising student to ensure a save exam environment & & & & & \\ \hline
 Providing a sense of surveillance & & & & & \\ \hline
 
 \end{tabular}
-\caption{\label{tab:Requirements_with_matching_design_principles}Tools and the design principles they match.}
+\caption{\label{tab:Requirements_with_matching_design_principles}Tools and The Design Principles they Match}
 \end{table}
 \end{center}
 
@@ -376,7 +384,7 @@ The artifact is a client-server application. The front-end (client) is responsib
 
 The client and server-side communicate over a simple REST API. The advantage of a client-server application lies in the separation of the data and the end-user. Users do not have direct access to data but any read- or write-action must be executed over an API. Here permissions can be checked and possible misuse inhibited. Additionally, as the user has no direct influence on the server's actions, the latter can act as a source of truth. Once committed data is now immutable. For example, the foraging of exam answers after submission becomes impossible. The API can also provide different kinds of endpoints for interaction with different users. Examiners, for example, can use one API endpoint to create exam questions, whereas students will get an error code if they try to interact with the endpoint.
 
-![Data model of the prototype](../figures/dataModel.svg "Data model of the prototype")
+![Data Model of the Prototype](../figures/dataModel.svg "Data model of the prototype")
 
 One of the most important design considerations is the data model that is used to store and access exam and user data. As is shown in figure 1, there are four central instances:
 The most critical data instance is the _question_. Especially with the creation of question-pools in mind, it is clear that these _question instances_ must live independently of any exam. A question consists of a title, the question type, the question text, the question's points, and the question's time limit. Further, each question has a question body. The shape of the question-body depends on the question type. For example, the multiple-choice question-body consists of a reference to the question it belongs to, and a selection of possible answers. For free-text questions, no body is needed. Still, to be consistent in the data structure, and to allow for later additions, free-text questions also have a body.
@@ -387,15 +395,15 @@ The third central instance is the user. Users can either be examinees or student
 
 The last key instance is the answer. For each question, an examinee answers an _answer instance_ is created. This instance contains a timestamp at which the question is started, a timestamp at which the question was answered, and the question-id the answer is referring to. Additionally, the answer object provides a flag that marks it as a master answer. Master answers are the correct answers, or in the case of free-text questions, provide a guideline of what is to be considered correct. These master answers can only be created by examiners. Analog to the question, the answer also bears an answer-body. The form of this body again depends on the question type. _Multiple-choice answer-bodies_ contain the selected answers, whereas _free-text answer-bodies_ contain the given free-text answer. Additionally, any answer body contains a reference to the answer and to the respective question using its id.
 
-![Start screen of an exam with important user information, e.g. their name and user-id](../figures/startExamCrop.png "fig 2")
+![Start Screen of an Exam with Important User Information](../figures/startExamCrop.png "fig 2")
 
 The above provides an overview of the data structure, as it is found in the database. As this app inhibits offline capabilities, large portions of this data structure can again be found in the front-end application. Of course, the data is reduced to the data that a user, e.g a student, is allowed to see. Still, the structure of questions and answers remain identical. To realize the mentioned offline capabilities, the exam data persists in the local storage of the browser. Data remains in this local storage until deleted by the app or intentionally removed by the user. If there is an internet connection the data on the server and the data in the local storage remain the same. Should the internet connection fail, the exam continues as normal. Answers are then saved to the local storage and at a later point in time, send to the server. Depending on the circumstances students are taking their exams under, examiners can adjust the degree of offline capabilities. Students could be allowed to take their complete exam in offline mode. At the end of the exam are they required to submit their answers. With the handling of offline capabilities, we can ensure the requirement _2.2_. Further, critical information to ensure a save exam environment are provided at the beginning of the exam. This can be seen in figure _2_
 
-![Answer field, with timer (bottom left)](../figures/answerCrop.png "fig 3")
+![Answer Field, with Timer (Bottom Left)](../figures/answerCrop.png "fig 3")
 
 To provide a way to meet requirement _2.1._ and to fulfill parts of the design principles to ensure _2.4._, the front-end application must enforce per question time constraints. The back-end can review the actual time used to give an answer. Still, the user interface must assist the student in taking only as much time as allowed. The artifact achieves this by showing the remaining time and submitting the currently provided answer as soon as time is up, as seen in figure _3_. This answer is then sent to the server. Students are thus forced to comply with the respective time constraints, leaving them no room to accidentally miss allowed times, this can be seen in figure _4_.
 
-![Automatic submission after time was depleted.](../figures/nextQuestionCrop.png "fig 4")
+![Automatic Submission After Time was Depleted.](../figures/nextQuestionCrop.png "fig 4")
 
 \newpage
 
