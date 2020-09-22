@@ -19,7 +19,6 @@ header-includes: |
   \usepackage{svg}
   \usepackage{tikz}
 
-
 include-before:
   - '`\newpage{}`{=latex}'
 ---
@@ -37,9 +36,7 @@ Tags:
 
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
 
-\begin{abstract}
-Examination is on of the few parts of education which has not profited from digitalization. Electronic exams can make the assessment process fast and sound. With respect to the current pandemic, e-exams are not only a chance but also in parts necessary. To allow for valid e-assessment, an examination system must meet certain requirements. For this, we develop design principles that help us match these requirements. With these desing principles we evaluate e-examination tools. We find non of them can meet the proposed requirements. With the aim of constructing a better solution, we propose a prototype that implements some crucial design principles.
-\end{abstract}
+\begin{abstract}Examination is one of the few parts of education which has not profited from digitalization. However, electronic examination can make the assessment process faster and more valid. Especially, with respect to the current pandemic, e-exams are not only an opportunity for improvement but have become necessary. To ensure sound e-assessments, an examination system must meet certain requirements. We develop these requirements and give insight into the design principles that help us match them. These design principles are used to evaluate popular e-examination tools. We find none of them fully meeting the proposed requirements. Especially, in areas of cheating prevention and protection against contestation these tools fall short. With the aim of constructing a better solution, we propose an examination tool prototype. In order address the shortcomings of the other tools, this prototype provides offline capabilities and per question time constraints. It thus lays a foundation for modernizing exams.\end{abstract}
 \newpage
 \tableofcontents
 
@@ -171,7 +168,7 @@ Building upon aspects talked about by @Handke2012 we can find ways to adress req
 
 The reliability of the exam medium is most dependent on the e-exam software. As with any software, high reliability can only be achieved through rigorous testing and continuous improvements.
 
-Another important point is device the operability. Decentralized e-exams are taken on the examinee's device. It thus largely lies within the responsibility of the device owner to ensure that it is working as intended. It must be mentioned that modern devices generally show low failure rates. As students in any way need a reliable device to participate in their studies, device operability is not a major problem. Still, the examination tool can prevent unnecessary device failure by strongly advising examinees to keep their devices updated, plugged into power and to not use unreliable devices.
+Another important point is device the operability. Decentralized e-exams are taken on the examinee's device. It thus largely lies within the responsibility of the device owner to ensure that it is working as intended. It must be mentioned that modern devices generally show low failure rates. As students in any way need a reliable device to participate in their studies, device operability is not a major problem. Still, the examination tool can prevent unnecessary device failure by strongly advising examinees to keep their devices updated, plugged into power and to not use unreliable devices. @Halbherr2014 also demand good user experience, as in hight stress situations the exam medium must not stand in between the exam and the examinee.
 
 The last major point in which the exam medium can fail, is connection loss that leads to time deficiencies for students. In normal operation, exam answers should continuously be sent to a server to minimize the risk of data loss. In case of connection issues, students must be able to continue their exams without problems. Data must then later be sent to the server. In case of both a device crash and internet failure, the exam should persist on the local storage of the device. The device can then be rebooted, and the exam can be continued. Although applications can have some offline capabilities examiners only fully control the server side. Following, @Handke2012 are advocates for high security in all parts that are still controlled by examiners. Only in this way can exams protect themselves from contestation.
 
@@ -193,8 +190,7 @@ Possible inequality arises in some key areas. In _BYOD_ exams, student devices a
 
 The process of correcting exams is another an area where possible inequalities can be found. Especially the correction of exams by hand is immensely time-consuming, this may result in fatigue and thus sometimes in answer checking mistakes. Besides accidental mistakes, @James1927 has found negative bias towards students with bad handwriting. He found students with bad handwriting get categorically worse grades than students with better handwriting.
 
-By using e-exams, these inequalities can be eliminated. First, some question types, such as multiple-choice questions can be checked automatically,
-leading to an immediate improvement over correcting these questions by hand. This leads to a lower correction load and thus to fewer correction mistakes. Second, as exam answers are available in digital text, reading and checking answers is easier. Answers must not be deciphered; correction of exams can be done faster. Meanwhile, e-exams can also eliminate biases against certain students connected to their handwriting.
+By using e-exams, these inequalities can be evened out @Halbherr2014. First, some question types, such as multiple-choice questions can be checked automatically, leading to an immediate improvement over correcting these questions by hand. This leads to a lower correction load and thus to fewer correction mistakes. Second, as exam answers are available in digital text, reading and checking answers is easier. Answers must not be deciphered; correction of exams can be done faster. Meanwhile, e-exams can also eliminate biases against certain students connected to their handwriting.
 
 For the requirement _2.3._, we thus find two main design principles. First, the software should be device agnostic. Second, the system must leverage automation possibilities.
 
@@ -244,7 +240,7 @@ Before thinking about how to obviate these cheating scenarios, an important stat
 
 **Cooperation with outsiders.** As decentralized e-exams are not conducted in a controlled environment, cooperation with outsiders becomes a severe problem. Examinees could try to take the exam in the presence of an expert. Some try to solve this problem by using proctored e-exams. These exams use live surveillance through webcam and microphone evaluated by a person watching in real-time. This approach hardly scales as for every 4-5 students, a supervising proctor is needed. Programs like @ETSTOEFL can use such a system, as their high test fees leave room for additional expenses.
 
-Although live surveillance of students is not a valid option, the psychological effects of being monitored can be leveraged. A measure might be to employ integrated webcams and microphones of the devices at hand. This video and sound data can be reviewed if needed. More importantly, it creates a mental barrier to cheating. If examinees commit to academic fraud, they will most certainly find a way to do so. The goal is to prevent those from cheating, that would only cheat if there was no threat of being caught. The sole existence of any measures makes students behave more honest. This can be compared to video surveillance that makes crime less common in public places [@WELSH2004].
+Although live surveillance of students is not a valid option, the psychological effects of being monitored can be leveraged. A measure might be to employ integrated webcams and microphones of the devices at hand. This video and sound data can be reviewed if needed. More importantly, it creates a mental barrier to cheating. If examinees commit to academic fraud, they will most certainly find a way to do so. The goal is to prevent those from cheating, that would only cheat if there was no threat of being caught. As @Halbherr2014 put it: "[...] sitting an online exam on an unsecured computer, fraud is all too easy, and tempting". Thus, it must be the goal to make cheating less tempting. The sole existence of any measures makes students behave more honest. This can be compared to video surveillance that makes crime less common in public places [@WELSH2004].
 
 **Exploit environmental circumstances.** Again randomization can solve this problem. As questions appear in a different order for each student, even multiple-choice questions cannot simply be copied.
 
@@ -256,13 +252,13 @@ For the requirement _2.4._, we find four main design principles. First, the crea
 
 ## Transparency
 
-The examination process should be transparent for examinees. Students must be able to understand their mistakes and shortcomings. This implies that the exam software provides ways to give feedback. Further, as examiners are not free of mistakes, corrections can sometimes be faulty. Well implemented transparency allows students to review the examiner's correction and contest against individual corrections. Important to mention is that every student should get the chance to review their exam. The digital nature of e-exams makes this degree of transparency easy to realize. Sharing a corrected digital copy of an exam, allows examinees to review their answers and understand their knowledgen gaps. Contestation against specific corrections could also be processed within the exam software.
+The examination process should be transparent for examinees. Students must be able to understand their mistakes and shortcomings. This implies that the exam software provides ways to give feedback. Further, as examiners are not free of mistakes, corrections can sometimes be faulty. Well implemented transparency allows students to review the examiner's correction and contest against individual corrections. Important to mention is that every student should get the chance to review their exam. The digital nature of e-exams makes this degree of transparency easy to realize [@GLM2015]. Sharing a corrected digital copy of an exam, allows examinees to review their answers and understand their knowledge gaps. Contestation against specific corrections could also be processed within the exam software.
 
 For the requirement _2.5_, we thus find two main design principles. First, the examiner must be able to give feedback to answers. Second, this feedback must be made available to the student.
 
 ## Attributability, Protection of Data and Integrity
 
-Exam data is highly sensitive and demands high levels of information security. As with any information system, fundamental information security principles apply. The following points prove to be of special importance.
+Exam data is highly sensitive and demands high levels of information security [GLM2015]. As with any information system, fundamental information security principles apply. The following points prove to be of special importance.
 
 Exam data must be uniquely traceable to examinees. This can be realized by having examinees log into a user account before they can perform any action. Examinees either get a unique identifier in-software or a unique identifier that is provided by the testing authority. Any of their actions is then linked to their user id.
 
@@ -434,6 +430,15 @@ Further, we evaluated these design principles on a multitude of software product
 As an outlook, the development of an e-examination tool is only part of the whole assessment process. The creation of the actual questions is a second important and time-consuming aspect. As already mentioned above, e-exams rely on large question pools. At the moment, no feasible way of sharing questions on a large scale exists. Such a sharing infrastructure--whether integrated into the exam tool or standalone--could largely improve the assessment process. Through collaborative effort such a platform could also improve the overall quality of questions asked in exams.
 
 To conclude, this thesis has proposed design principles that can be used to create a valid e-examination software. Further, it provides a software artifact that embeds key design principles. Although, this prototype is by no means market-ready it provides a starting point for a software that allows for valid and decentralized e-exams.
+
+\newpage
+
+# Declaration
+
+Ich versichere hiermit wahrheitsgemäß, die Arbeit selbstständig verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt, die wörtlich oder inhaltlich übernommenen Stellen als solche kenntlich gemacht und die Satzung des Karlsruher Instituts für Technologie (KIT) zur Sicherung guter wissenschaftlicher Praxis in der jeweils gültigen Fassung beachtet zu haben.
+
+Karlsruhe, den 23.09.2020: \hrulefill\newline
+\phantom{Karlsruhe, den 23.09.2020: }Jasper Anders
 
 \newpage
 
