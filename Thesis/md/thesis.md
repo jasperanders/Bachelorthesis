@@ -1,9 +1,5 @@
 ---
-author: Jasper Anders
-
-title: "Modernizing Exams — Designing a Tool for Valid and Scalable Decentralized E-Exams"
-
-bibliography: ["/home/jasper/Documents/papers/bibtex/collection.bib"]
+bibliography: ["/home/jasper/Documents/papers/bibtex/coll2.bib"]
 link-citations: true
 
 documentclass: article
@@ -15,13 +11,14 @@ margin-top: 3.4cm
 margin-bottom: 3.5cm
 paper-size: a4
 
-toc: true
+# toc: true
 number-sections: true
 
 header-includes: |
   \usepackage{multirow}
   \usepackage{svg}
   \usepackage{tikz}
+
 
 include-before:
   - '`\newpage{}`{=latex}'
@@ -39,6 +36,13 @@ Tags:
 <!-- Taking the current pandemic under consideration, it may not be an option to just move from paper to e-exams. Exams thus must be conducted decentralized, i.d. students take their exams at ho  me. -->
 
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+
+\begin{abstract}
+Examination is on of the few parts of education which has not profited from digitalization. Electronic exams can make the assessment process fast and sound. With respect to the current pandemic, e-exams are not only a chance but also in parts necessary. To allow for valid e-assessment, an examination system must meet certain requirements. For this, we develop design principles that help us match these requirements. With these desing principles we evaluate e-examination tools. We find non of them can meet the proposed requirements. With the aim of constructing a better solution, we propose a prototype that implements some crucial design principles.
+\end{abstract}
+\newpage
+\tableofcontents
+
 \newpage
 
 # Introduction
@@ -90,7 +94,7 @@ Lastly, we determine requirements that mainly influence the technical implementa
 7. **Integrity.** Exam data must maintain consistency, accuracy and trustworthiness throughout its entire lifetime.
 8. **Attributability.** A taken exam must uniquely map to a single examinee and vice versa.
 
-These categories set a general framework of how to design any examination system. Figure _1_ shows the design principles needed in order to match the requirements mentioned above. In the following, we will discuss these design principles.
+These categories set a general framework of how to design any examination system. Table _1_ shows the design principles needed in order to match the requirements mentioned above. In the following, we will discuss these design principles.
 
 \begin{center}
 \def\arraystretch{1.5}
@@ -147,7 +151,7 @@ Examinations should support the purpose of universities to produce highly capabl
 
 Further, different degrees of allowed aid for a question can be identified: In open-book exams, students are allowed to solve the question at hand using any resource. These open-book exams rely mostly on both competence and essay-type questions. It could be argued that these types of questions resemble a real-world scenario in which access to information is rarely limited. Meanwhile, closed question are rendered insignificant in such open-book exam situations, as simple factual knowledge is easily accessible. In order to ask closed questions, it is necessary to restrict access to any aid.
 
-Classic paper-based exams do not provide a feasible way of combining degrees of allowed aid. Therefore, some question groups tend to be neglected. This constrains the possibilities to create an accurate depiction of an examinees' actual competence. With e-exams, on the other hand, we can implement such a varying degree of usable aid, creating a _partial_ open-book exam. This can be achieved by letting students generally use any resource they need to answer the question. Additionally, we introduce per question time constraints. These time constraints can be adjusted according to the question and question type. Leaving closed questions with a strict time constraint and creating an _either-you-know-it-or-you-don't_ situation, where the student has no time to look up any solution. Essay-type questions, just as competence questions, can employ more generous time frames, giving the examinees freedom to make use of their tools.
+Classic paper-based exams do not provide a feasible way of combining degrees of allowed aid. Therefore, some question groups tend to be neglected. This constrains the possibilities to create an accurate depiction of an examinees' actual competence [@Cluskey2011]. With e-exams, on the other hand, we can implement such a varying degree of usable aid, creating a _partial_ open-book exam. This can be achieved by letting students generally use any resource they need to answer the question. Additionally, we introduce per question time constraints. These time constraints can be adjusted according to the question and question type. Leaving closed questions with a strict time constraint and creating an _either-you-know-it-or-you-don't_ situation, where the student has no time to look up any solution. Essay-type questions, just as competence questions, can employ more generous time frames, giving the examinees freedom to make use of their tools.
 
 Ultimately, examination software does not directly impact on what exact questions the examiner asks. The content of a question predefines how well this question can predict an examinee's capabilities. Still, the use of a partial open-book mode allows for a diverse set of questions. This mode allows to test factual, transfer and practical knowledge to an equally valid degree.
 
@@ -163,13 +167,13 @@ Matching desing principles:
 - Caching answers while taking the exam.
 -->
 
-Contestation of entire paper-based exams is not a common problem. This is a result of the controlled environment of paper-based exams. Adding, the medium used to test examinees (i.e. paper) is fail-safe. E-exams, especially decentralized ones, introduce the possibility of failure of the exam medium. They rely on software, the operation of an electronic device and internet connection. Failure of the exam medium can lead to students contesting the validity of the exam.
+Building upon aspects talked about by @Handke2012 we can find ways to adress requirement _2.2_. Contestation of entire paper-based exams is not a common problem. This is a result of the controlled environment of paper-based exams. Adding, the medium used to test examinees (i.e. paper) is fail-safe. E-exams, especially decentralized ones, introduce the possibility of failure of the exam medium. @Handke2012 propose a client-server application for an examination tool. These tools rely on software, the operation of an electronic device and internet connection. Failure of the exam medium can lead to students contesting the validity of the exam.
 
 The reliability of the exam medium is most dependent on the e-exam software. As with any software, high reliability can only be achieved through rigorous testing and continuous improvements.
 
 Another important point is device the operability. Decentralized e-exams are taken on the examinee's device. It thus largely lies within the responsibility of the device owner to ensure that it is working as intended. It must be mentioned that modern devices generally show low failure rates. As students in any way need a reliable device to participate in their studies, device operability is not a major problem. Still, the examination tool can prevent unnecessary device failure by strongly advising examinees to keep their devices updated, plugged into power and to not use unreliable devices.
 
-The last major point in which the exam medium can fail, is connection loss that leads to time deficiencies for students. In normal operation, exam answers should continuously be sent to a server to minimize the risk of data loss. In case of connection issues, students must be able to continue their exams without problems. Data must then later be sent to the server. In case of both a device crash and internet failure, the exam should persist on the local storage of the device. The device can then be rebooted, and the exam can be continued.
+The last major point in which the exam medium can fail, is connection loss that leads to time deficiencies for students. In normal operation, exam answers should continuously be sent to a server to minimize the risk of data loss. In case of connection issues, students must be able to continue their exams without problems. Data must then later be sent to the server. In case of both a device crash and internet failure, the exam should persist on the local storage of the device. The device can then be rebooted, and the exam can be continued. Although applications can have some offline capabilities examiners only fully control the server side. Following, @Handke2012 are advocates for high security in all parts that are still controlled by examiners. Only in this way can exams protect themselves from contestation.
 
 For the requirement _2.2._, we thus find three main design principles. The first principle is the continuous improvement and sound testing of exam software. The second is advising examinees to ensure their device is working as intended. The last is taking connection issues into account and being able to handle them.
 
@@ -185,7 +189,7 @@ Matching design principles:
 
 Equal treatment of examinees should be ensured throughout the entire examination process, reaching from taking the exam to its correction.
 
-Possible inequality arises in some key areas. In _BYOD_ exams, student devices are largely heterogeneous--they run different operating systems and consist of different hardware. This fact should not lead to different exam-taking experiences. The choice of hardware should be largely irrelevant. Consequently, it makes little sense to develop proprietary software for each operating system. Modern web technologies provide a common language among different systems. Web applications do not lack speed or functionality and can be adopted cross-platform. The software is hosted at a central entity where it can be maintained and improved. The software artifact is then delivered via a modern browser. The examination software thus should rely on internet technologies.
+Possible inequality arises in some key areas. In _BYOD_ exams, student devices are largely heterogeneous--they run different operating systems and consist of different hardware. This fact should not lead to different exam-taking experiences [@Handke2012]. The choice of hardware should be largely irrelevant. Consequently, it makes little sense to develop proprietary software for each operating system. Modern web technologies provide a common language among different systems. Web applications do not lack speed or functionality and can be adopted cross-platform. The software is hosted at a central entity where it can be maintained and improved. The software artifact is then delivered via a modern browser. The examination software thus should rely on internet technologies.
 
 The process of correcting exams is another an area where possible inequalities can be found. Especially the correction of exams by hand is immensely time-consuming, this may result in fatigue and thus sometimes in answer checking mistakes. Besides accidental mistakes, @James1927 has found negative bias towards students with bad handwriting. He found students with bad handwriting get categorically worse grades than students with better handwriting.
 
@@ -232,7 +236,9 @@ When thinking about any assessment, considering and handling academic dishonesty
 
 Before thinking about how to obviate these cheating scenarios, an important statement must be made: Cheating cannot completely be eliminated. There are always means for students to engage in cheating. Although e-exams cannot change this fact, we can find measures to prevent cheating to a certain degree.
 
-**Knowing a question.** The creation of questions is a time-consuming process. Thus, an examiner's strategy may be to keep questions as secret as possible and reuse them throughout multiple exams. This is a rather ineffective strategy as platforms such as @Studydrive often provide comprehensive exam protocols. These protocols are contributed by examinees who have already taken a given exam. The digital nature of e-exams inhibits the use of the above approach. Students are able to capture questions and distribute them even faster and more accurately. Thus, e-exams must choose a different solution. Instead of having few questions and keeping them secret, e-exams have to leverage large question pools. As question pools grow larger, it becomes unfeasible for students to _know_ every available question.
+**Knowing a question.** The creation of questions is a time-consuming process. Thus, an examiner's strategy may be to keep questions as secret as possible and reuse them throughout multiple exams [@Gehringer2004]. This is a rather ineffective strategy as platforms such as Studydrive[^studydrive] often provide comprehensive exam protocols. These protocols are contributed by examinees who have already taken a given exam. The digital nature of e-exams inhibits the use of the above approach. Students are able to capture questions and distribute them even faster and more accurately. Thus, e-exams must choose a different solution. Instead of having few questions and keeping them secret, e-exams have to leverage large question pools. As question pools grow larger, it becomes unfeasible for students to _know_ every available question.
+
+[^studydrive]: https://www.studydrive.net/
 
 **Cooperation with other examinees.** For _closed questions_, this cooperation can be prevented by using tight time restrictions. As already stated above, these questions fall into the category _either-you-know-it-or-you-don't_. There is no need for a lengthy reflection period. With these short time frames, there is no time for cooperation with others. For more open question types, time limitations are not as tight. At the same time, answers require more in-depth considerations. To ensure that students write down their own ideas and do not share their thoughts, the input possibilities must be limited. Copying and pasting should be disabled to prevent the sharing of answers between students. To further inhibit cheating, the order of questions should be randomized, and the navigation between questions should not be allowed.
 
@@ -278,19 +284,25 @@ In the previous section we have developed design principles. These principles al
 
 As mentioned, in this thesis we will evaluate five popular software alternatives:
 
-- @Ilias
-- @Moodle
-- @OpenOlat
-- @Blackboard
-- @LPlus
+- Ilias[^ilias]
+- Moodle[^moodle]
+- OpenOlat[^open]
+- Blackboard[^black]
+- LPlus[^lplus]
+
+[^ilias]: https://www.ilias.de/
+[^moodle]: https://moodle.de/
+[^open]: https://www.openolat.com/
+[^black]: https://www.blackboard.com/de-de
+[^lplus]: https://lplus.de/home
 
 These five systems consist of popular e-learning applications used by large parts of German higher education. _Illias_, _Moodle_, and _Open Olat_ are open source and free to use. Both _Blackboard_ and _LPlus_ are closed source and are paid products. Besides _LPlus_, all of the products are learning management systems (LMS). A learning management system provides management of the complete e-learning process in a single application. LMS allow for the distribution of teaching material, exchange between students, and provide a platform for educators to get in touch with their students. The systems discussed here also incorporate e-assessment features. German universities often have such LMS in operation. Using the integrated assessment tools becomes a seamless experience for these institutions. While this appeals in theory, the integrated assessment capabilities still need to be evaluated. We will measure the quality of all five tools based on their degree of fulfillment of the requirements and design principles we laid out in section _2_.
 
-As a baseline, all these tools are market-ready products. All of them have user management with respective permissions, and are actively maintained, laying a foundation for the _protection of data, attributability and integrity_. Further, all of them rely on a browser to provide their services, thus being device agnostic. They also leverage automation where it is possible. Thus, they match _requirement 2.3_.
+As a baseline, all these tools are market-ready products. All of them have user management with respective permissions, and are actively maintained, laying a foundation for the _protection of data, attributability and integrity_. Further, all of them rely on a browser to provide their services, thus being device agnostic. They also leverage automation where it is possible. Thus, they match requirement _2.3_.
 
 ## General validity
 
-All products allow a variety of question types, thus partly matching the first design principle. To completely fulfil the _requirement 2.1._, exams need to enforce per question time constraints. Here only _Open Olat_, and _LPlus_ can provide such a feature. The other systems allow for time constraints to be set on the whole exam; time limits on a per question basis are not possible.
+All products allow a variety of question types, thus partly matching the first design principle. To completely fulfil the requirement _2.1._, exams need to enforce per question time constraints. Here only _Open Olat_, and _LPlus_ can provide such a feature. The other systems allow for time constraints to be set on the whole exam; time limits on a per question basis are not possible.
 
 ## Protection against contestation
 
@@ -375,21 +387,31 @@ The most critical data instance is the _question_. Especially with the creation 
 
 These questions can then be assembled into the second central instance, the exam. Each exam contains an exam name, the users that are allowed to take part in a given exam, and an exam date. Most importantly, an exam contains a list of question ids, which constitute the exam content.
 
-The third central instance is the user. Users can either be examinees or students with each having different permissions. Students, in contrast to examiners, can not create exams or questions. If any new data instance is created, e.g. a new question, the _author_ property is set to user performing the request. Further, users possess an email, a password, a name, and a unique identifier property. The id is provided by the application but could also be an identifier given by the testing authority. With user handling and automatic assignment of authorship, we can ensure _2.8_ and, to a large degree _2.6_ and _2.7_.
+The third central instance is the user. Users can either be examinees or students with each having different permissions. Students, in contrast to examiners, can not create exams or questions. If any new data instance is created, e.g. a new question, the _author_ property is set to user performing the request. Further, users possess an email, a password, a name, and a unique identifier property. The id is provided by the application but could also be an identifier given by the testing authority, as can be seen in figure _2_. With user handling and automatic assignment of authorship, we can ensure _2.8_ and, to a large degree _2.6_ and _2.7_.
 
 The last key instance is the answer. For each question, an examinee answers an _answer instance_ is created. This instance contains a timestamp at which the question is started, a timestamp at which the question was answered, and the question-id the answer is referring to. Additionally, the answer object provides a flag that marks it as a master answer. Master answers are the correct answers, or in the case of free-text questions, provide a guideline of what is to be considered correct. These master answers can only be created by examiners. Analog to the question, the answer also bears an answer-body. The form of this body again depends on the question type. _Multiple-choice answer-bodies_ contain the selected answers, whereas _free-text answer-bodies_ contain the given free-text answer. Additionally, any answer body contains a reference to the answer and to the respective question using its id.
 
-The above provides an overview of the data structure, as it is found in the database. As this app inhibits offline capabilities, large portions of this data structure can again be found in the front-end application. Of course, the data is reduced to the data that a user, e.g a student, is allowed to see. Still, the structure of questions and answers remain identical. To realize the mentioned offline capabilities, the exam data persists in the local storage of the browser. Data remains in this local storage until deleted by the app or intentionally removed by the user. If there is an internet connection the data on the server and the data in the local storage remain the same. Should the internet connection fail, the exam continues as normal. Answers are then saved to the local storage and at a later point in time, send to the server. Depending on the circumstances students are taking their exams under, examiners can adjust the degree of offline capabilities. Students could be allowed to take their complete exam in offline mode. At the end of the exam are they required to submit their answers. With the handling of offline capabilities, we can ensure the _requirement 2_.
+![Start screen of an exam with important user information, e.g. their name and user-id](../figures/startExamCrop.png "fig 2")
 
-To provide a way to meet the requirement 1. and to fulfill parts of the design principles to ensure _2.4._, the front-end application must enforce per question time constraints. The back-end can review the actual time used to give an answer. Still, the user interface must assist the student in taking only as much time as allowed. The artifact achieves this by showing the remaining time and submitting the currently provided answer as soon as time is up. This answer is then sent to the server. Students are thus forced to comply with the respective time constraints, leaving them no room to accidentally miss allowed times.
+The above provides an overview of the data structure, as it is found in the database. As this app inhibits offline capabilities, large portions of this data structure can again be found in the front-end application. Of course, the data is reduced to the data that a user, e.g a student, is allowed to see. Still, the structure of questions and answers remain identical. To realize the mentioned offline capabilities, the exam data persists in the local storage of the browser. Data remains in this local storage until deleted by the app or intentionally removed by the user. If there is an internet connection the data on the server and the data in the local storage remain the same. Should the internet connection fail, the exam continues as normal. Answers are then saved to the local storage and at a later point in time, send to the server. Depending on the circumstances students are taking their exams under, examiners can adjust the degree of offline capabilities. Students could be allowed to take their complete exam in offline mode. At the end of the exam are they required to submit their answers. With the handling of offline capabilities, we can ensure the requirement _2.2_. Further, critical information to ensure a save exam environment are provided at the beginning of the exam. This can be seen in figure _2_
 
-## Tech Stack <!-- Umgangsprache?? -->
+![Answer field, with timer (bottom left)](../figures/answerCrop.png "fig 3")
+
+To provide a way to meet requirement _2.1._ and to fulfill parts of the design principles to ensure _2.4._, the front-end application must enforce per question time constraints. The back-end can review the actual time used to give an answer. Still, the user interface must assist the student in taking only as much time as allowed. The artifact achieves this by showing the remaining time and submitting the currently provided answer as soon as time is up, as seen in figure _3_. This answer is then sent to the server. Students are thus forced to comply with the respective time constraints, leaving them no room to accidentally miss allowed times, this can be seen in figure _4_.
+
+![Automatic submission after time was depleted.](../figures/nextQuestionCrop.png "fig 4")
+
+\newpage
+
+## Technologies in Use
 
 Both the server and the client side are written in a coding language called JavaScript. It is the most popular language on Github [@Octoverse]. JavaScript allows programmers to realize a complete web app using only one language, making it a compelling option when writing such an application. Besides, many modern and popular libraries for web development are written in JavaScript. Some libraries also find use in this artifact, the most crucial being React created by Facebook and the Express framework [@Express].
 
 React is "a JavaScript library for building user interfaces" [@FacebookInc]. It uses structures that are divisible in reusable components. React makes it easy to create complex applications instead of simple websites. It was originally created by Facebook and finds its use in the tech-stacks of Uber, Airbnb, Netflix and many more [@Techstack]. Further the front-end uses the JavaScript superset TypeScript. TypeScript allows to define and check for complex types, whereas JavaScript in general is typless. These types allow for more secure data handling, making the application overall less prone to bugs. Lastly, an UI-library is used to create a visually more pleasing experience.
 
-Express is a common library for the creation of back-end services. It is lightweight and allows for the creation of both simple and complex APIs. As many back-end-applications rely on the same structure, generators for the fundamentals exist. For this artifact, we used the _Rest API Generator_ [@Scholz]. The express server also handles data storage; for this purpose a database is connected. The artifact uses a noSQL database called MongoDB [@MongoDB]. MongoDB does not store data in tables, but in JSON-like documents. The JSON format is inspired by JavaScript objects. Thus, the data structure used in the front-end of the application, directly translates to the data structure that is used to store the given data.
+Express is a common library for the creation of back-end services. It is lightweight and allows for the creation of both simple and complex APIs. As many back-end-applications rely on the same structure, generators for the fundamentals exist. For this artifact, we used the _Rest API Generator_ [@Scholz]. The express server also handles data storage; for this purpose a database is connected. The artifact uses a noSQL database called MongoDB [^mongodb]. MongoDB does not store data in tables, but in JSON-like documents. The JSON format is inspired by JavaScript objects. Thus, the data structure used in the front-end of the application, directly translates to the data structure that is used to store the given data.
+
+[^mongodb]: https://www.mongodb.com/de/what-is-mongodb.
 
 ## Future Implementations
 
