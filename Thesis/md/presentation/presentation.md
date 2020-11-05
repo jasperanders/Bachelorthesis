@@ -27,7 +27,7 @@ Klausuren sind einer der wenigen Teile der Bildung die nicht im großen Stil von
   - werden als Möglichkeit der **Selbsteinschätzung** genutzt
 - E-Klausuren Tools sind oft in den **LMS** (Learn-Management-Systemen) integriert, die die Instutionen nutzen, um Lernmaterial zu verwalten.
 
-## Warum Proctoring keine gute Idee ist
+<!-- ## Warum Proctoring keine gute Idee ist
 
 _Proctoring_, meint das **digitale Beaufsichtigen** von Prüflingen über Webcam & Mikrofon durch einen Menschen.
 
@@ -36,7 +36,7 @@ Folgende Problem ergeben sich:
 - Schlechte **Skalierbarkeit**, jeder Proctor kann nur eine kleine Gruppe an Prüflingen überwachen
 - **Rahmenbedingungen** werden weiterhin von Studenten definiert; somit sind sie offen für Manipulation
 
-$\rightarrow$ schlechtes Aufwand/Leistungs Verhältnis.
+$\rightarrow$ schlechtes Aufwand/Leistungs Verhältnis. -->
 
 ## Warum Tools, die wir schon haben nicht ausreichen
 
@@ -44,7 +44,6 @@ Prominente Tools haben unterschiedliche **Stärken und Schwächen**. Besonders g
 
 - Schlechte Handhabung von **Verbindungsabbrüchen** $\rightarrow$ Gegebene Antworten müssen u.U. wiederholt werden.
 - Keine Möglichkeit der **Identitätsüberprüfung**
-- Schlechte Möglichkeiten Prüflingen die **Rahmenbedingungen** einer Prüfung zu vermitteln
 - Unzulängliche Maßnahmen gegen **Betrugsversuche**
 
 # Was brauchen wir für eine valide Klausur? -- Anforderungen und Ausgestaltung
@@ -57,8 +56,8 @@ Klausuren sind mehr als nur eine Summe von Fragen. Unabhängig von Inhalten, mü
 - Anfechtungsschutz
 - Gleichbehandlung
 - Schutz vor Betrugsversuchen
-- Transperenz
-- Daten Schutz
+- Transparenz
+- Datenschutz
 - Integrität
 - _und_ Zuordbarkeit
 
@@ -72,15 +71,15 @@ Klausurergebnisse sollten möglichst genau den **Kenntnis und Fähigkeitenstand*
 
 ### Lässt sich erreichen mit:
 
-- **Zeitbeschränkung** auf Fragenbasis
 - Verschiedene **Fragetypen**
+- **Zeitbeschränkung** auf Fragenbasis
 
 ### Bedeutet in der Umsetzung:
 
 - Einbinden von **Kontrollzeiten** in der Benutzeroberfläche
   - Automatische Abgabe der Frage nach Ablauf der Zeit
   - Serverzeiten und Zeiten des Gerätes abgleichen
-- Erstellen von _Open-Book_ Klausuren
+- Erstellen von _partiellen Open-Book_ Klausuren
 
 ## Anfechtungsschutz {.allowframebreaks}
 
@@ -90,8 +89,8 @@ Digitale Klausuren werden unter **_unsicheren_ Umständen** geschrieben. Gerade 
 
 ### Lässt sich erreichen mit:
 
-- Fähigkeiten mit **Verbindungsabbrüchen** umzugehen
 - Klare **Kommunikation und Einblicke**, wie die Klausur abläuft
+- Fähigkeiten mit **Verbindungsabbrüchen** umzugehen
 
 ### Bedeutet in der Umsetzung:
 
