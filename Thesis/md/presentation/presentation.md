@@ -81,6 +81,10 @@ Klausurergebnisse sollten möglichst genau den **Kenntnis und Fähigkeitenstand*
   - Serverzeiten und Zeiten des Gerätes abgleichen
 - Erstellen von _partiellen Open-Book_ Klausuren
 
+###
+
+![Answer Field, with Timer (Bottom Left)](../../figures/answerCrop.png "fig 3")
+
 ## Anfechtungsschutz {.allowframebreaks}
 
 ### Meint:
@@ -97,6 +101,10 @@ Digitale Klausuren werden unter **_unsicheren_ Umständen** geschrieben. Gerade 
 - **Informationsfenster** vor jeder Klausur
 - **Einführung** in das Tool vor der Klausur, z.B. anhand einer Testklausur
 - **Offline Fähigkeiten** der Software. Lokales Speichern von Antworten
+
+###
+
+![Start Screen of an Exam with Important User Information](../../figures/startExamCrop.png "fig 2")
 
 ## Gleichbehandlung {.allowframebreaks}
 
@@ -134,7 +142,7 @@ Einer der entscheiden Punkte im Prüfungsprozess ist das Sicherstellen, der **au
 - Nutzung von Kamera- & Tondaten; nicht um eine Live-Überwachung möglich zu machen, sondern um ein **Überwachungsgefühl** zu schaffen
 - [Einbinden von Kontrollzeiten in der Benutzeroberfläche]
 
-## Transperenz {.allowframebreaks}
+## Transperenz
 
 ### Meint:
 
@@ -160,3 +168,9 @@ Digitale Klausursystem sind **informationsstechnische Systeme** und müssen demn
 - Konsequente **Nutzerrechte Verwaltung**; wer darf wo lesen/schreiben/löschen?
 - Ausgeführte **Aktionen müssen Nachvollziehbar** sein. Welcher Nutzer ist dafür verantwortlich, dass ein Datenpunkt so aussieht, wie er es tut?
 - Programmfehler müssen minimiert werden, der Programmcode muss damit Nachvollziehbar sein. Codebasen sollten also **quelloffen** sein.
+
+# Vielen Dank für Ihre Aufmerksamkeit. Fragen?
+
+## Datenstruktur
+
+![Data Model of the Prototype](../../figures/dataModel.svg "Data model of the prototype")
