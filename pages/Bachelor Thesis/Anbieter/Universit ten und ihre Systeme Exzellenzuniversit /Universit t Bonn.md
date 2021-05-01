@@ -1,3 +1,0 @@
-# Universität Bonn
-
-Tags: ilias

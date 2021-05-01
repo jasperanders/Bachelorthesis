@@ -1,3 +1,0 @@
-# RWTH Aachen
-
-Tags: moodle

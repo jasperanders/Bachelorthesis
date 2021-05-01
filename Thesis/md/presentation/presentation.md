@@ -12,10 +12,13 @@ theme: metropolis
 Klausuren sind einer der wenigen Teile der Bildung die nicht im großen Stil von digitalisierung profitiert haben. Die Digitalisierung birgt dabei folgende Vorteile:
 
 - Verbesserte **Auswertung** von Klausurergebnissen
+
 - Erhebliche **Vereinfachung der logistischen Planung** von Klausuren; während des Testens und der Korrektur
+
 - **Archivierung** ist deutlich effizienter und sicherer
 
 - Erweiterung des Klausur-Mediums erlaubt **anwendungsorientiertere Fragen**
+
 - Das **Corona Virus** schränkt zudem Präsenzklausuren erheblich ein
 
 ## Wo stehen wir
@@ -81,7 +84,7 @@ Klausurergebnisse sollten möglichst genau den **Kenntnis und Fähigkeitenstand*
   - Serverzeiten und Zeiten des Gerätes abgleichen
 - Erstellen von _partiellen Open-Book_ Klausuren
 
-###
+### 
 
 ![Answer Field, with Timer (Bottom Left)](../../figures/answerCrop.png "fig 3")
 
@@ -102,7 +105,7 @@ Digitale Klausuren werden unter **_unsicheren_ Umständen** geschrieben. Gerade 
 - **Einführung** in das Tool vor der Klausur, z.B. anhand einer Testklausur
 - **Offline Fähigkeiten** der Software. Lokales Speichern von Antworten
 
-###
+### 
 
 ![Start Screen of an Exam with Important User Information](../../figures/startExamCrop.png "fig 2")
 
@@ -157,7 +160,7 @@ Der Klausurprozess muss **Nachvollziehbar** sein, das bezieht sich vor allem auf
 
 - Durchdachtes **Design des Userinterfaces**, das vor allem für Korrektoren die Klickzahl minimiert.
 
-## Daten Schutz, Integrität und Zuordbarkeit {.allowframebreaks}
+## Datenschutz, Integrität und Zuordbarkeit {.allowframebreaks}
 
 ### Meint:
 

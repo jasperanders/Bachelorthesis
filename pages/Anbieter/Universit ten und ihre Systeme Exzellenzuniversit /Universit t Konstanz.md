@@ -1,3 +1,0 @@
-# Universität Konstanz
-
-Tags: ilias
